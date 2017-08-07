@@ -1,0 +1,15 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-FOHEARTPlugin-7836.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"G:\Unreal Projects\UE_4.16\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h.obj"
+"J:\Unreal Projects\FOHEARTPlugin\FOHEARTPlugin\Intermediate\Build\Win64\UE4Editor\Development\FOHEARTPlugin\FOHEARTPlugin.cpp.obj"
+"J:\Unreal Projects\FOHEARTPlugin\FOHEARTPlugin\Intermediate\Build\Win64\UE4Editor\Development\FOHEARTPlugin\FOHEARTPluginGameModeBase.cpp.obj"
+"J:\Unreal Projects\FOHEARTPlugin\FOHEARTPlugin\Intermediate\Build\Win64\UE4Editor\Development\FOHEARTPlugin\FOHEARTPlugin.generated.cpp.obj"
+"G:\Unreal Projects\UE_4.16\Engine\Intermediate\Build\Win64\UE4Editor\Development\FOHEARTPlugin\PCLaunch.rc.res"
+"G:\Unreal Projects\UE_4.16\Engine\Intermediate\Build\Win64\UE4Editor\Development\ModuleVersionResource.rc.inl.res"
+/OUT:"J:\Unreal Projects\FOHEARTPlugin\FOHEARTPlugin\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-FOHEARTPlugin-7836.lib"

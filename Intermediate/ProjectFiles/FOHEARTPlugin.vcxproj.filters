@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\FOHEARTPlugin.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{7A837D46-6E49-4F78-9C9C-3604B7062ECF}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\FOHEARTPlugin.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\FOHEARTPluginEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{C7D05F84-7CBB-4C7C-A304-D1D6AB50D9EB}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Plugins">
+      <UniqueIdentifier>{5F498A62-AF4F-4583-B537-ABBAB6466C45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\FOHEART">
+      <UniqueIdentifier>{4871D582-3DFE-4A49-9735-73FC89F09421}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\FOHEART\Source">
+      <UniqueIdentifier>{5E3CD776-2057-4386-A4EF-521029FA7A58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\FOHEART\Source\FOHEART">
+      <UniqueIdentifier>{D2634D3B-55B6-4AAD-9E23-64F44A249208}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\FOHEART\Source\FOHEART\FOHEART.Build.cs">
+      <Filter>Plugins\FOHEART\Source\FOHEART</Filter>
+    </None>
+    <Filter Include="Plugins\FOHEART\Source\FOHEART\Private">
+      <UniqueIdentifier>{F58DE6B4-DB52-448F-A68E-A80E0AE8E0C6}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\FOHEART\Source\FOHEART\Private\FOHEART.cpp">
+      <Filter>Plugins\FOHEART\Source\FOHEART\Private</Filter>
+    </ClCompile>
+    <Filter Include="Plugins\FOHEART\Source\FOHEART\Public">
+      <UniqueIdentifier>{D867F172-8834-44BA-81E9-7C584E94E3D1}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\FOHEART\Source\FOHEART\Public\FOHEART.h">
+      <Filter>Plugins\FOHEART\Source\FOHEART\Public</Filter>
+    </ClInclude>
+    <None Include="..\..\Plugins\FOHEART\FOHEART.uplugin">
+      <Filter>Plugins\FOHEART</Filter>
+    </None>
+    <Filter Include="Plugins\FOHEART\Resources">
+      <UniqueIdentifier>{91E2587F-C648-484D-ABC6-702F45381308}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\FOHEART\Resources\Icon128.png">
+      <Filter>Plugins\FOHEART\Resources</Filter>
+    </None>
+    <Filter Include="Source\FOHEARTPlugin">
+      <UniqueIdentifier>{D8FFDDF3-63BA-42BA-A7E6-B9598BFA6886}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\FOHEARTPlugin\FOHEARTPlugin.Build.cs">
+      <Filter>Source\FOHEARTPlugin</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\FOHEARTPlugin\FOHEARTPlugin.cpp">
+      <Filter>Source\FOHEARTPlugin</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FOHEARTPlugin\FOHEARTPlugin.h">
+      <Filter>Source\FOHEARTPlugin</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FOHEARTPlugin\FOHEARTPluginGameModeBase.cpp">
+      <Filter>Source\FOHEARTPlugin</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FOHEARTPlugin\FOHEARTPluginGameModeBase.h">
+      <Filter>Source\FOHEARTPlugin</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Plugins\FOHEART\Source\FOHEART\Private\FOHEARTMath.h">
+      <Filter>Plugins\FOHEART\Source\FOHEART\Private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\FOHEART\Source\FOHEART\Public\FOHEARTBPLibrary.h">
+      <Filter>Plugins\FOHEART\Source\FOHEART\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\FOHEART\Source\FOHEART\Public\FOHEARTBVHSkeleton.h">
+      <Filter>Plugins\FOHEART\Source\FOHEART\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\FOHEART\Source\FOHEART\Public\FOHEARTController.h">
+      <Filter>Plugins\FOHEART\Source\FOHEART\Public</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Plugins\FOHEART\Source\FOHEART\Private\FOHEARTBPLibrary.cpp">
+      <Filter>Plugins\FOHEART\Source\FOHEART\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\FOHEART\Source\FOHEART\Private\FOHEARTBVHSkeleton.cpp">
+      <Filter>Plugins\FOHEART\Source\FOHEART\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\FOHEART\Source\FOHEART\Private\FOHEARTController.cpp">
+      <Filter>Plugins\FOHEART\Source\FOHEART\Private</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
