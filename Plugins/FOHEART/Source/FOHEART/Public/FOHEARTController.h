@@ -10,7 +10,8 @@
 #include "FOHEARTBVHSkeleton.h"
 #include "FOHEARTController.generated.h"
 
-
+#define PACKAGE_HEADER_LEN (128)  /*Data Package from MotionVenus is always < 1500Bytes and it's header is 128Bytes*/
+#define PACKAGE_MAX_LEN	(MAXBONES * (12+6) + PACKAGE_HEADER_LEN)	// translation:4*3=12Bytes rotation:2*3=6Bytes
 // Supported motion line formats
 enum MotionLineFormatEnum { Standard, FOHEART_C1, FOHEART_LEO };
 
@@ -18,16 +19,16 @@ UCLASS()
 class AFOHEARTController : public AActor
 {
 	GENERATED_BODY()
-	
-public:	
+
+public:
 	// Sets default values for this actor's properties
 	AFOHEARTController();
 
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-	
+
 	// Called every frame
-	virtual void Tick( float DeltaSeconds ) override;
+	virtual void Tick(float DeltaSeconds) override;
 
 	// Called when the game stops
 	virtual void BeginDestroy() override;
@@ -37,35 +38,21 @@ public:
 	//
 private:
 	FSocket* ReceiverSocket;
-#define MAXFLOATS	MAXBONES * 6	// 3 for x,y,z translation and 3 for x,y,z rotation	
-	typedef struct {
-		FString actorName;
-		float MotionLine[MAXFLOATS];	// Array of floats with last motion line read
-	}MotionLine_TypeDef;
 
 public:
 	// Connect to BVH server ( MotionVenus )
 	bool Connect(FString HostName, int32 Port);
 	bool ConnectUDP(FString HostName, int32 Port);
 	// Disconnect from BVH server
-	void Disconnect(void);			
+	void Disconnect(void);
 
 	bool bConnected = false;		// Connection to BVH server established?
 	bool bReference = false;		// BVH server sends a reference (root) bone
 	bool bDisplacement = true;		// BVH server sends displacement (translation) infos
 	MotionLineFormatEnum MotionLineFormat = FOHEART_C1;	// Which motion line format is used by the BVH server?
-
-
-	float MotionLine[MAXFLOATS];	// Array of floats with last motion line read
 	TMap<FString, float*> MotionLineMap;
-	// FVector<MotionLine_TypeDef> MotionLines;
-	int32 FloatCount = 23*6;			// How many floats did we read into MotionLine array
-private:
-	int32 FloatSkip = 0;			// How many leading floats should we skip?	
+	int32 FloatCount = 23 * 6;			// How many floats did we read into MotionLine array
 
-	//
-	// BVH Reference Skeleton
-	//
 public:
 	FOHEARTBVHSkeleton Skeleton;
 
@@ -78,10 +65,6 @@ public:
 
 	BONEMAP Bonemap[MAXBONES];
 
-
-	//
-	// BVH Player
-	//
 public:
 	bool Play(FString BVHFileName, bool bPlayEndless);
 	bool Pause(bool bPause);
@@ -96,8 +79,16 @@ private:
 	bool bPlayerInitialized = false;
 	bool bEndless = true;
 	TArray<FString> PlayerMotionLines;
+	void tongji();
 
 public:
 	bool bPlay = false;
 
+	//For Debug Only
+private:
+	uint64_t lastSendTimeStamp;
+	uint64_t lastSendFrameNum;
+	uint64_t frameNum;
+	uint64_t sendTimeStamp;
+	uint32_t sendFreq;
 };
