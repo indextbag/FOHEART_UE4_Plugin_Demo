@@ -526,39 +526,33 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	op(EFOHEART_C1BonesEnum::VE_RightToeBase) \
 	op(EFOHEART_C1BonesEnum::VE_LeftUpLeg) \
 	op(EFOHEART_C1BonesEnum::VE_LeftLeg) \
-	op(EFOHEART_C1BonesEnum::VE_LeftFoot) \
-	op(EFOHEART_C1BonesEnum::VE_LeftToeBase) 
+	op(EFOHEART_C1BonesEnum::VE_LeftFoot) 
 #define FOREACH_ENUM_EFOHEARTCHANNELNUMBERENUM(op) \
 	op(EFOHEARTChannelNumberEnum::VE_0) \
 	op(EFOHEARTChannelNumberEnum::VE_1) \
 	op(EFOHEARTChannelNumberEnum::VE_2) \
 	op(EFOHEARTChannelNumberEnum::VE_3) \
-	op(EFOHEARTChannelNumberEnum::VE_4) \
-	op(EFOHEARTChannelNumberEnum::VE_5) 
+	op(EFOHEARTChannelNumberEnum::VE_4) 
 #define FOREACH_ENUM_EFOHEARTROTORDERENUM(op) \
 	op(EFOHEARTRotOrderEnum::VE_XYZ) \
 	op(EFOHEARTRotOrderEnum::VE_XZY) \
 	op(EFOHEARTRotOrderEnum::VE_YXZ) \
 	op(EFOHEARTRotOrderEnum::VE_YZX) \
-	op(EFOHEARTRotOrderEnum::VE_ZXY) \
-	op(EFOHEARTRotOrderEnum::VE_ZYX) 
+	op(EFOHEARTRotOrderEnum::VE_ZXY) 
 #define FOREACH_ENUM_EFOHEARTXYZENUM(op) \
 	op(EFOHEARTXYZEnum::VE_X) \
 	op(EFOHEARTXYZEnum::VE_Y) \
 	op(EFOHEARTXYZEnum::VE_Z) \
 	op(EFOHEARTXYZEnum::VE_NX) \
-	op(EFOHEARTXYZEnum::VE_NY) \
-	op(EFOHEARTXYZEnum::VE_NZ) 
+	op(EFOHEARTXYZEnum::VE_NY) 
 #define FOREACH_ENUM_EFOHEARTMOTIONLINEFORMATENUM(op) \
 	op(EFOHEARTMotionLineFormatEnum::VE_Standard) \
-	op(EFOHEARTMotionLineFormatEnum::VE_FOHEART_C1) \
-	op(EFOHEARTMotionLineFormatEnum::VE_FOHEART_LEO) 
+	op(EFOHEARTMotionLineFormatEnum::VE_FOHEART_C1) 
 #define FOREACH_ENUM_EFOHEARTSKELETONENUM(op) \
 	op(EFOHEARTSkeletonEnum::VE_None) \
 	op(EFOHEARTSkeletonEnum::VE_FOHEART_C1) \
 	op(EFOHEARTSkeletonEnum::VE_FOHEART_LEO) \
 	op(EFOHEARTSkeletonEnum::VE_TPP_Hero) \
 	op(EFOHEARTSkeletonEnum::VE_Mannequin) \
-	op(EFOHEARTSkeletonEnum::VE_Map) \
-	op(EFOHEARTSkeletonEnum::VE_UE4) 
+	op(EFOHEARTSkeletonEnum::VE_Map) 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

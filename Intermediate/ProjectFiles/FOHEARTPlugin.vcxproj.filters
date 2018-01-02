@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\FOHEARTPlugin.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{A31AC34B-9FB8-4FC5-A709-D77C3011ED3D}</UniqueIdentifier>
+			<UniqueIdentifier>{0A6EA4EC-253F-4717-9FD4-738CD4B9A489}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\FOHEARTPlugin.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{9FBA22D6-C205-4890-9AF9-DFFC52DBDE28}</UniqueIdentifier>
+			<UniqueIdentifier>{77B5A1A8-6708-466F-90D1-A65DCE565BF4}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -25,22 +25,22 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Plugins">
-			<UniqueIdentifier>{F332A279-844D-4A25-9FB7-8E4EE2C5BA1B}</UniqueIdentifier>
+			<UniqueIdentifier>{500D6624-7AE5-4BE6-A6E8-43DB148293F4}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="Plugins\FOHEART">
-			<UniqueIdentifier>{1B681BF0-5721-4B3C-BBCA-C0F7FF8D208A}</UniqueIdentifier>
+			<UniqueIdentifier>{6B558BA3-AC88-4BB9-A4AA-0EE577B00F25}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="Plugins\FOHEART\Source">
-			<UniqueIdentifier>{EBEBCF95-1284-4A21-BED2-53E92D5AA237}</UniqueIdentifier>
+			<UniqueIdentifier>{BAA32653-8DCA-4ECD-8501-F85DE1E33F5B}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="Plugins\FOHEART\Source\FOHEART">
-			<UniqueIdentifier>{23A7BC0A-3437-43EE-A825-DF8A37FB0D1B}</UniqueIdentifier>
+			<UniqueIdentifier>{60FD8525-259E-405F-8DB2-B7046F7BA556}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Plugins\FOHEART\Source\FOHEART\FOHEART.Build.cs">
 			<Filter>Plugins\FOHEART\Source\FOHEART</Filter>
 		</None >
 		<Filter Include="Plugins\FOHEART\Source\FOHEART\Private">
-			<UniqueIdentifier>{0FEBC5BE-361F-441F-9AF6-43DD43D98BB2}</UniqueIdentifier>
+			<UniqueIdentifier>{D4333467-A2DE-4227-A060-0EC12AC8FA89}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Plugins\FOHEART\Source\FOHEART\Private\FOHEART.cpp">
 			<Filter>Plugins\FOHEART\Source\FOHEART\Private</Filter>
@@ -58,7 +58,7 @@
 			<Filter>Plugins\FOHEART\Source\FOHEART\Private</Filter>
 		</ClInclude >
 		<Filter Include="Plugins\FOHEART\Source\FOHEART\Public">
-			<UniqueIdentifier>{0AC7F6F9-4AC4-4AED-98D8-3800DB6C9F7B}</UniqueIdentifier>
+			<UniqueIdentifier>{C21D8BDA-3118-4FDB-A0AF-8276677EFF49}</UniqueIdentifier>
 		</Filter>
 		<ClInclude Include="..\..\Plugins\FOHEART\Source\FOHEART\Public\FOHEART.h">
 			<Filter>Plugins\FOHEART\Source\FOHEART\Public</Filter>
@@ -76,13 +76,13 @@
 			<Filter>Plugins\FOHEART</Filter>
 		</None >
 		<Filter Include="Plugins\FOHEART\Resources">
-			<UniqueIdentifier>{000540D0-A7D3-4A4C-8869-49C4EF286AC9}</UniqueIdentifier>
+			<UniqueIdentifier>{84C8215F-9A6F-4DCC-B8DA-C49451DA881A}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Plugins\FOHEART\Resources\Icon128.png">
 			<Filter>Plugins\FOHEART\Resources</Filter>
 		</None >
 		<Filter Include="Source\FOHEARTPlugin">
-			<UniqueIdentifier>{29C74C21-A501-42A6-AE24-5A95C54D9C9E}</UniqueIdentifier>
+			<UniqueIdentifier>{CDCC9BE3-B02F-415C-A7E1-7E4C6AF57C81}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\FOHEARTPlugin\FOHEARTPlugin.Build.cs">
 			<Filter>Source\FOHEARTPlugin</Filter>
