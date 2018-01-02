@@ -1,8 +1,5 @@
-﻿  Performing 3 actions (4 in parallel)
-  Module.FOHEART.cpp
-  [2/3] Link UE4Editor-FOHEART.dll
-  [3/3] Link UE4Editor-FOHEART.lib
-     Creating library J:\Unreal Projects\FOHEARTPlugin\Plugins\FOHEART\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-FOHEART.suppressed.lib and object J:\Unreal Projects\FOHEARTPlugin\Plugins\FOHEART\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-FOHEART.suppressed.exp
-     Creating library J:\Unreal Projects\FOHEARTPlugin\Plugins\FOHEART\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-FOHEART.lib and object J:\Unreal Projects\FOHEARTPlugin\Plugins\FOHEART\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-FOHEART.exp
-  Deploying FOHEARTPluginEditor Win64 Development...
-  Total build time: 17.52 seconds (Local executor: 16.41 seconds)
+﻿  Performing full C++ include scan (building a new target)
+  Target is up to date
+  Deploying FOHEARTPlugin Win64 Development...
+  Prepping UE4 for deployment to Win64
+  Total build time: 1.05 seconds (NoActionsToExecute executor: 0.00 seconds)

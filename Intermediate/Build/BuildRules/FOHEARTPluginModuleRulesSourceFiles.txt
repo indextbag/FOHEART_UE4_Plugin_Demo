@@ -1,4 +1,4 @@
-J:\Unreal Projects\FOHEARTPlugin\Source\FOHEARTPlugin\FOHEARTPlugin.Build.cs
-J:\Unreal Projects\FOHEARTPlugin\Plugins\FOHEART\Source\FOHEART\FOHEART.Build.cs
-J:\Unreal Projects\FOHEARTPlugin\Source\FOHEARTPlugin.Target.cs
-J:\Unreal Projects\FOHEARTPlugin\Source\FOHEARTPluginEditor.Target.cs
+J:\UEPluginDemo\FOHEART_UE4_Plugin_Demo\Source\FOHEARTPlugin\FOHEARTPlugin.Build.cs
+J:\UEPluginDemo\FOHEART_UE4_Plugin_Demo\Plugins\FOHEART\Source\FOHEART\FOHEART.Build.cs
+J:\UEPluginDemo\FOHEART_UE4_Plugin_Demo\Source\FOHEARTPlugin.Target.cs
+J:\UEPluginDemo\FOHEART_UE4_Plugin_Demo\Source\FOHEARTPluginEditor.Target.cs

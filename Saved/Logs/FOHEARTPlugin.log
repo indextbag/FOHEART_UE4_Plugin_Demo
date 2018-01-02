@@ -1,9 +1,37 @@
-﻿Log file open, 08/08/17 15:51:56
+﻿Log file open, 01/02/18 13:22:39
 LogInit:Display: Running engine for game: FOHEARTPlugin
 LogPlatformFile: Not using cached read wrapper
-LogInit:Display: RandInit(138990516) SRandInit(138990516).
+LogInit:Display: RandInit(-9780443) SRandInit(-9780443).
 LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
-LogStats: Stats thread started at 0.097624
+LogStats: Stats thread started at 0.096532
+LogInit:Warning: Incompatible or missing module: UE4Editor-FOHEARTPlugin.dll
+LogInit:Warning: Incompatible or missing module: UE4Editor-FOHEART.dll
+Running G:/Unreal Projects/UE_4.16/Engine/Binaries/DotNET/UnrealBuildTool.exe FOHEARTPlugin Development Win64 -project="J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/FOHEARTPlugin.uproject" -editorrecompile -progress -NoHotReloadFromIDE
+Performing full C++ include scan (building a new target)
+Creating makefile for FOHEARTPlugin (no existing makefile)
+@progress push 5%
+Parsing headers for FOHEARTPluginEditor
+  Running UnrealHeaderTool "J:\UEPluginDemo\FOHEART_UE4_Plugin_Demo\FOHEARTPlugin.uproject" "J:\UEPluginDemo\FOHEART_UE4_Plugin_Demo\Intermediate\Build\Win64\FOHEARTPluginEditor\Development\FOHEARTPluginEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+Reflection code generated for FOHEARTPluginEditor in 15.5565199 seconds
+@progress pop
+Performing 12 actions (4 in parallel)
+[3/12] Resource PCLaunch.rc
+[2/12] Resource PCLaunch.rc
+SharedPCH.Engine.cpp
+Module.FOHEART.cpp
+FOHEARTPlugin.cpp
+FOHEARTPluginGameModeBase.cpp
+FOHEART.generated.cpp
+FOHEARTPlugin.generated.cpp
+[9/12] Link UE4Editor-FOHEARTPlugin.dll
+[10/12] Link UE4Editor-FOHEARTPlugin.lib
+   Creating library J:\UEPluginDemo\FOHEART_UE4_Plugin_Demo\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-FOHEARTPlugin.suppressed.lib and object J:\UEPluginDemo\FOHEART_UE4_Plugin_Demo\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-FOHEARTPlugin.suppressed.exp
+   Creating library J:\UEPluginDemo\FOHEART_UE4_Plugin_Demo\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-FOHEARTPlugin.lib and object J:\UEPluginDemo\FOHEART_UE4_Plugin_Demo\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-FOHEARTPlugin.exp
+[11/12] Link UE4Editor-FOHEART.dll
+[12/12] Link UE4Editor-FOHEART.lib
+   Creating library J:\UEPluginDemo\FOHEART_UE4_Plugin_Demo\Plugins\FOHEART\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-FOHEART.lib and object J:\UEPluginDemo\FOHEART_UE4_Plugin_Demo\Plugins\FOHEART\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-FOHEART.exp
+   Creating library J:\UEPluginDemo\FOHEART_UE4_Plugin_Demo\Plugins\FOHEART\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-FOHEART.suppressed.lib and object J:\UEPluginDemo\FOHEART_UE4_Plugin_Demo\Plugins\FOHEART\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-FOHEART.suppressed.exp
+Total build time: 43.91 seconds (Local executor: 22.16 seconds)
 LogInit: Using libcurl 7.47.1
 LogInit:  - built for x86_64-pc-win32
 LogInit:  - supports SSL with OpenSSL/1.0.2g
@@ -50,561 +78,639 @@ LogInit: Base directory: G:/Unreal Projects/UE_4.16/Engine/Binaries/Win64/
 LogInit: Installed Engine Build: 1
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
-[2017.08.08-07.51.56:785][  0]LogInit: Selected Device Profile: [Windows]
-[2017.08.08-07.51.56:785][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2017.08.08-07.51.56:795][  0]LogInit: Computer: MAOXIAOHU-WIN7
-[2017.08.08-07.51.56:795][  0]LogInit: User: Administrator
-[2017.08.08-07.51.56:795][  0]LogInit: CPU Page size=4096, Cores=4
-[2017.08.08-07.51.56:795][  0]LogInit: High frequency timer resolution =3.221719 MHz
-[2017.08.08-07.51.56:795][  0]LogMemory: Memory total: Physical=23.9GB (24GB approx)
-[2017.08.08-07.51.56:795][  0]LogMemory: Platform Memory Stats for Windows
-[2017.08.08-07.51.56:795][  0]LogMemory: Process Physical Memory: 273.29 MB used, 273.29 MB peak
-[2017.08.08-07.51.56:795][  0]LogMemory: Process Virtual Memory: 259.42 MB used, 259.42 MB peak
-[2017.08.08-07.51.56:795][  0]LogMemory: Physical Memory: 12992.96 MB used,  11502.07 MB free, 24495.04 MB total
-[2017.08.08-07.51.56:795][  0]LogMemory: Virtual Memory: 626.02 MB used,  11502.07 MB free, 134217728.00 MB total
-[2017.08.08-07.51.56:860][  0]LogInit: Using OS detected language (zh-CN).
-[2017.08.08-07.51.56:860][  0]LogInit: Using OS detected locale (zh-CN).
-[2017.08.08-07.51.57:777][  0]LogD3D11RHI: D3D11 adapters:
-[2017.08.08-07.51.58:364][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 950' (Feature Level 11_0)
-[2017.08.08-07.51.58:364][  0]LogD3D11RHI:       2017/0/12247 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
-[2017.08.08-07.51.58:366][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2017.08.08-07.51.58:366][  0]LogD3D11RHI:       0/0/12247 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2017.08.08-07.51.58:366][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2017.08.08-07.51.58:373][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2017.08.08-07.51.58:373][  0]LogD3D11RHI:     GPU DeviceId: 0x1402 (for the marketing name, search the web for "GPU Device Id")
-[2017.08.08-07.51.58:373][  0]LogWindows: EnumDisplayDevices:
-[2017.08.08-07.51.58:373][  0]LogWindows:    0. 'NVIDIA GeForce GTX 950' (P:1 D:1)
-[2017.08.08-07.51.58:373][  0]LogWindows:    1. 'NVIDIA GeForce GTX 950' (P:0 D:1)
-[2017.08.08-07.51.58:373][  0]LogWindows:    2. 'NVIDIA GeForce GTX 950' (P:0 D:0)
-[2017.08.08-07.51.58:373][  0]LogWindows:    3. 'NVIDIA GeForce GTX 950' (P:0 D:0)
-[2017.08.08-07.51.58:374][  0]LogWindows:    4. 'NVIDIA GeForce GTX 950' (P:0 D:0)
-[2017.08.08-07.51.58:374][  0]LogWindows:    5. 'NVIDIA GeForce GTX 950' (P:0 D:0)
-[2017.08.08-07.51.58:374][  0]LogWindows:    6. 'NVIDIA GeForce GTX 950' (P:0 D:0)
-[2017.08.08-07.51.58:374][  0]LogWindows:    7. 'NVIDIA GeForce GTX 950' (P:0 D:0)
-[2017.08.08-07.51.58:374][  0]LogWindows:    8. 'NVIDIA GeForce GTX 950' (P:0 D:0)
-[2017.08.08-07.51.58:374][  0]LogWindows:    9. 'NVIDIA GeForce GTX 950' (P:0 D:0)
-[2017.08.08-07.51.58:374][  0]LogWindows:    10. 'NVIDIA GeForce GTX 950' (P:0 D:0)
-[2017.08.08-07.51.58:375][  0]LogWindows:    11. 'NVIDIA GeForce GTX 950' (P:0 D:0)
-[2017.08.08-07.51.58:375][  0]LogWindows:    12. 'NVIDIA GeForce GTX 950' (P:0 D:0)
-[2017.08.08-07.51.58:375][  0]LogWindows:    13. 'NVIDIA GeForce GTX 950' (P:0 D:0)
-[2017.08.08-07.51.58:375][  0]LogWindows:    14. 'NVIDIA GeForce GTX 950' (P:0 D:0)
-[2017.08.08-07.51.58:375][  0]LogWindows:    15. 'NVIDIA GeForce GTX 950' (P:0 D:0)
-[2017.08.08-07.51.58:375][  0]LogWindows: DebugString: FoundDriverCount:16 
-[2017.08.08-07.51.58:375][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 950
-[2017.08.08-07.51.58:375][  0]LogD3D11RHI:   Driver Version: 378.66 (internal:21.21.13.7866, unified:378.66)
-[2017.08.08-07.51.58:375][  0]LogD3D11RHI:      Driver Date: 2-9-2017
-[2017.08.08-07.51.58:375][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
-[2017.08.08-07.51.58:930][  0]LogD3D11RHI: Async texture creation enabled
-[2017.08.08-07.51.58:967][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
-[2017.08.08-07.51.59:063][  0]LogShaderCompilers: Guid format shader working directory is 14 characters bigger than the processId version (J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/Intermediate/Shaders/WorkingDirectory/12200/).
-[2017.08.08-07.51.59:063][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Administrator/AppData/Local/Temp/UnrealShaderWorkingDir/572E3055411E3C34E21EB4A4F0F28018/'.
-[2017.08.08-07.51.59:063][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
-[2017.08.08-07.52.00:105][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
-[2017.08.08-07.52.00:148][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
-[2017.08.08-07.52.00:190][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
-[2017.08.08-07.52.00:234][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
-[2017.08.08-07.52.00:275][  0]LogTemp:Display: Loaded TP MacTargetPlatform
-[2017.08.08-07.52.00:319][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
-[2017.08.08-07.52.00:360][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
-[2017.08.08-07.52.00:404][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
-[2017.08.08-07.52.00:439][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
-[2017.08.08-07.52.00:479][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
-[2017.08.08-07.52.00:523][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
-[2017.08.08-07.52.00:563][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
-[2017.08.08-07.52.00:607][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
-[2017.08.08-07.52.00:647][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
-[2017.08.08-07.52.00:691][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
-[2017.08.08-07.52.00:774][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
-[2017.08.08-07.52.00:774][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
-[2017.08.08-07.52.00:807][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
-[2017.08.08-07.52.00:884][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
-[2017.08.08-07.52.00:906][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
-[2017.08.08-07.52.00:946][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
-[2017.08.08-07.52.00:989][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
-[2017.08.08-07.52.01:029][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
-[2017.08.08-07.52.01:071][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
-[2017.08.08-07.52.01:071][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2017.08.08-07.52.01:451][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
-[2017.08.08-07.52.01:530][  0]LogDerivedDataCache: Loaded boot cache 0.08s 90MB C:/Users/Administrator/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
-[2017.08.08-07.52.01:530][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Administrator/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc
-[2017.08.08-07.52.01:530][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2017.08.08-07.52.01:530][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2017.08.08-07.52.01:530][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2017.08.08-07.52.01:530][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2017.08.08-07.52.01:548][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2017.08.08-07.52.01:562][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Administrator/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2017.08.08-07.52.01:572][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
-[2017.08.08-07.52.01:573][  0]LogSlate: Using Freetype 2.6.0
-[2017.08.08-07.52.01:573][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2017.08.08-07.52.01:573][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2017.08.08-07.52.01:920][  0]LogInit: Selected Device Profile: [Windows]
-[2017.08.08-07.52.01:985][  0]LogContentStreaming: Texture pool size is 0.00 MB
-[2017.08.08-07.52.02:130][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
-[2017.08.08-07.52.02:169][  0]LogSimplygon: Simplygon DLL not present - disabling.
-[2017.08.08-07.52.02:212][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
-[2017.08.08-07.52.02:212][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
-[2017.08.08-07.52.02:212][  0]LogMeshUtilities: No automatic mesh merging module available
-[2017.08.08-07.52.02:730][  0]LogNetVersion: FOHEARTPlugin , NetCL: 3452394, EngineNetVer: 2, GameNetVer: 0 (Checksum: 481050671)
-[2017.08.08-07.52.02:788][  0]LogAssetRegistry: FAssetRegistry took 0.0261 seconds to start up
-[2017.08.08-07.52.02:893][  0]LogPackageLocalizationCache: Processed 5 localized package path(s) for 4 prioritized culture(s) in 0.091329 seconds
-[2017.08.08-07.52.02:900][  0]LogUObjectArray: 34194 objects as part of root set at end of initial load.
-[2017.08.08-07.52.02:900][  0]LogUObjectAllocator: 7260424 out of 0 bytes used by permanent object pool.
-[2017.08.08-07.52.02:900][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2017.08.08-07.52.02:946][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2017.08.08-07.52.05:211][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2017.08.08-07.52.05:247][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2017.08.08-07.52.05:775][  0]LogMaterial: Uniform references updated for custom material expression Custom.
-[2017.08.08-07.52.06:134][  0]SourceControl: 信息 源码控制已禁用
-[2017.08.08-07.52.06:138][  0]SourceControl: 信息 源码控制已禁用
-[2017.08.08-07.52.06:181][  0]SourceControl: 信息 源码控制已禁用
-[2017.08.08-07.52.06:226][  0]SourceControl: 信息 源码控制已禁用
-[2017.08.08-07.52.06:455][  0]LogLinker:Warning: 无法寻找到文件'/Game/ThirdPersonCPP/ThirdPersonOverview'
-[2017.08.08-07.52.06:456][  0]LogLinker:Warning: 无法寻找到文件'/Game/ThirdPersonCPP/ThirdPersonOverview'
-[2017.08.08-07.52.06:456][  0]LogUObjectGlobals:Warning: 寻找对象'Class /Game/ThirdPersonCPP/ThirdPersonOverview.ThirdPersonOverview_C'失败
-[2017.08.08-07.52.06:833][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2017.08.08-07.52.07:325][  0]LogInit: Plugin For FOHEART C1 & FOHEART LEO start.
-[2017.08.08-07.52.07:428][  0]LogEngine: Initializing Engine...
-[2017.08.08-07.52.07:429][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2017.08.08-07.52.07:616][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2017.08.08-07.52.07:616][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2017.08.08-07.52.07:761][  0]LogAIModule: Creating AISystem for world Untitled
-[2017.08.08-07.52.07:778][  0]LogInit: XAudio2 using '耳机 (High Definition Audio 设备)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2017.08.08-07.52.07:802][  0]LogInit: FAudioDevice initialized.
-[2017.08.08-07.52.07:860][  0]LogDerivedDataCache: Saved boot cache 0.06s 90MB C:/Users/Administrator/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
-[2017.08.08-07.52.07:869][  0]LogInit: Texture streaming: Enabled
-[2017.08.08-07.52.07:950][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2017.08.08-07.52.07:950][  0]LogEngineSessionManager: EngineSessionManager sent abnormal shutdown report. Type=Debugger, SessionId={EFA60EAF-4BEE-6A8C-7C8D-FB91BF2ED164}
-[2017.08.08-07.52.08:163][  0]LogInit: Transaction tracking system initialized
-[2017.08.08-07.52.08:491][  0]BlueprintLog: New page: 编辑器加载
-[2017.08.08-07.52.09:363][  0]LocalizationService: 信息 本地化服务已被禁用
-[2017.08.08-07.52.09:987][  0]LogConsoleResponse:Display: 
-[2017.08.08-07.52.10:121][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2017.08.08-07.52.10:121][  0]LogCook:Display: Mobile HDR setting 1
-[2017.08.08-07.52.10:497][  0]LogFileCache: Scanning file cache for directory 'J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/Content/' took 0.01s
-[2017.08.08-07.52.11:129][  0]SourceControl: 信息 源码控制已禁用
-[2017.08.08-07.52.11:129][  0]Cmd: MAP LOAD FILE="../../../Engine/Content/Maps/Templates/Template_Default.umap" TEMPLATE=1 SHOWPROGRESS=1 FEATURELEVEL=3
-[2017.08.08-07.52.11:131][  0]LightingResults: New page: 光照构建
-[2017.08.08-07.52.11:178][  0]MapCheck: New page: 地图检测
-[2017.08.08-07.52.11:179][  0]LightingResults: New page: 光照构建
-[2017.08.08-07.52.11:403][  0]LogAIModule: Creating AISystem for world Untitled_1
-[2017.08.08-07.52.11:404][  0]LogActorComponent: RegisterComponentWithWorld: (/Temp/Untitled_1.Untitled_1:PersistentLevel.WorldSettings_1.StaticMeshComponent0) Trying to register component with IsPendingKill() == true. Aborting.
-[2017.08.08-07.52.11:408][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2017.08.08-07.52.11:423][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2017.08.08-07.52.11:487][  0]MapCheck: 信息 地图检测完成：0个错误，0 个警告，用时63.273毫秒完成。
-[2017.08.08-07.52.11:487][  0]LogFileHelpers: Loading map 'Template_Default' took 0.358
-[2017.08.08-07.52.11:610][  0]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (搜狗拼音输入法).
-[2017.08.08-07.52.11:707][  0]LogCollectionManager: Loaded 0 collections in 0.001022 seconds
-[2017.08.08-07.52.11:805][  0]LogFileCache: Scanning file cache for directory 'J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/Saved/Collections/' took 0.01s
-[2017.08.08-07.52.11:805][  0]LogFileCache: Scanning file cache for directory 'J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/Content/Developers/Administrator/Collections/' took 0.01s
-[2017.08.08-07.52.11:805][  0]LogFileCache: Scanning file cache for directory 'J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/Content/Collections/' took 0.01s
-[2017.08.08-07.52.11:805][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
-[2017.08.08-07.52.11:816][  0]LogContentBrowser: Native class hierarchy populated in 0.0106 seconds. Added 2332 classes and 496 folders.
-[2017.08.08-07.52.11:867][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0023 seconds. Added 0 classes and 0 folders.
-[2017.08.08-07.52.11:936][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0020 seconds. Added 0 classes and 0 folders.
-[2017.08.08-07.52.11:974][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0023 seconds. Added 1 classes and 2 folders.
-[2017.08.08-07.52.12:010][  0]LogCrashTracker: Crashtracker disabled due to settings.
-[2017.08.08-07.52.12:018][  0]LogSlate: Took 0.000356 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2017.08.08-07.52.12:021][  0]LogSlate: Took 0.002457 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansFallback.ttf' (3848K)
-[2017.08.08-07.52.12:022][  0]LogSlate: Took 0.000316 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2017.08.08-07.52.12:027][  0]LogSlate: Took 0.000411 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2017.08.08-07.52.12:139][  0]LogRenderer: Reallocating scene render targets to support 1172x576 NumSamples 1 (Frame:1).
-[2017.08.08-07.52.12:263][  0]LogUObjectGlobals:Warning: 寻找对象'Class 无.'失败
-[2017.08.08-07.52.12:323][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0021 seconds. Added 1 classes and 2 folders.
-[2017.08.08-07.52.12:323][  0]LogLoad: (Engine Initialization) Total time: 17.49 seconds
-[2017.08.08-07.52.12:323][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.09 seconds
-[2017.08.08-07.52.12:323][  0]LogExternalProfiler: Found external profiler: VSPerf
-[2017.08.08-07.52.12:323][  0]LogExternalProfiler: Using external profiler: VSPerf
-[2017.08.08-07.52.12:336][  0]LogOcInput: OculusInput pre-init called
-[2017.08.08-07.52.12:336][  0]LogHMD: Starting GearVRController plugin
-[2017.08.08-07.52.12:349][  0]LogAssetRegistry: Asset discovery search completed in 9.5840 seconds
-[2017.08.08-07.52.12:351][  0]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
-[2017.08.08-07.52.12:351][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000058 seconds (updated 0 objects)
-[2017.08.08-07.52.12:354][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2017.08.08-07.52.12:395][  0]LogSlate: Took 0.000334 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
-[2017.08.08-07.52.28:013][571]LogSlate: Took 0.000300 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
-[2017.08.08-07.52.28:145][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告  序列 没有有效输出
-[2017.08.08-07.52.28:147][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: spine_01  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
-[2017.08.08-07.52.28:147][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: pelvis  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
-[2017.08.08-07.52.28:147][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: spine_03  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
-[2017.08.08-07.52.28:147][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: spine_02  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
-[2017.08.08-07.52.28:147][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: neck_01  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
-[2017.08.08-07.52.28:147][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: upperarm_r  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
-[2017.08.08-07.52.28:147][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: clavicle_r  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
-[2017.08.08-07.52.28:147][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: hand_r  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
-[2017.08.08-07.52.28:147][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: lowerarm_r  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
-[2017.08.08-07.52.28:148][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: lowerarm_l  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
-[2017.08.08-07.52.28:148][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: hand_l  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
-[2017.08.08-07.52.28:148][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: clavicle_l  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
-[2017.08.08-07.52.28:148][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: upperarm_l  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
-[2017.08.08-07.52.28:148][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: calf_r  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
-[2017.08.08-07.52.28:148][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: thigh_r  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
-[2017.08.08-07.52.28:148][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: ball_r  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
-[2017.08.08-07.52.28:148][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: foot_r  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
-[2017.08.08-07.52.28:148][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: calf_l  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
-[2017.08.08-07.52.28:148][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: thigh_l  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
-[2017.08.08-07.52.28:148][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: ball_l  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
-[2017.08.08-07.52.28:148][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: foot_l  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
-[2017.08.08-07.52.28:149][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 [0033.32] Compile of HeroTPP_FOHEART_AnimBlueprint successful, but with 22 Warning(s) [in 40 ms] (/Game/HeroTPP/Character/HeroTPP_FOHEART_AnimBlueprint.HeroTPP_FOHEART_AnimBlueprint)
-[2017.08.08-07.52.28:149][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 [0033.32] Compile of HeroTPP_FOHEART_AnimBlueprint successful, but with 23 Warning(s) [in 0 ms] (/Game/HeroTPP/Character/HeroTPP_FOHEART_AnimBlueprint.HeroTPP_FOHEART_AnimBlueprint)
-[2017.08.08-07.52.28:149][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 [0033.32] Compile of HeroTPP_FOHEART_AnimBlueprint successful, but with 24 Warning(s) [in 0 ms] (/Game/HeroTPP/Character/HeroTPP_FOHEART_AnimBlueprint.HeroTPP_FOHEART_AnimBlueprint)
-[2017.08.08-07.52.28:185][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告  序列 没有有效输出
-[2017.08.08-07.52.28:188][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: spine_01  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
-[2017.08.08-07.52.28:188][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: pelvis  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
-[2017.08.08-07.52.28:188][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: spine_03  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
-[2017.08.08-07.52.28:188][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: spine_02  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
-[2017.08.08-07.52.28:188][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: neck_01  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
-[2017.08.08-07.52.28:188][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: upperarm_r  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
-[2017.08.08-07.52.28:188][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: clavicle_r  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
-[2017.08.08-07.52.28:188][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: hand_r  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
-[2017.08.08-07.52.28:188][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: lowerarm_r  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
-[2017.08.08-07.52.28:188][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: lowerarm_l  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
-[2017.08.08-07.52.28:188][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: hand_l  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
-[2017.08.08-07.52.28:189][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: clavicle_l  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
-[2017.08.08-07.52.28:189][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: upperarm_l  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
-[2017.08.08-07.52.28:189][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: calf_r  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
-[2017.08.08-07.52.28:189][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: thigh_r  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
-[2017.08.08-07.52.28:189][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: ball_r  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
-[2017.08.08-07.52.28:189][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: foot_r  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
-[2017.08.08-07.52.28:189][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: calf_l  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
-[2017.08.08-07.52.28:189][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: thigh_l  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
-[2017.08.08-07.52.28:189][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: ball_l  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
-[2017.08.08-07.52.28:189][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: foot_l  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
-[2017.08.08-07.52.28:189][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 [0033.36] Compile of HeroTPP_FOHEART_AnimBlueprint successful, but with 22 Warning(s) [in 37 ms] (/Game/HeroTPP/Character/HeroTPP_FOHEART_AnimBlueprint.HeroTPP_FOHEART_AnimBlueprint)
-[2017.08.08-07.52.28:189][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 [0033.36] Compile of HeroTPP_FOHEART_AnimBlueprint successful, but with 23 Warning(s) [in 0 ms] (/Game/HeroTPP/Character/HeroTPP_FOHEART_AnimBlueprint.HeroTPP_FOHEART_AnimBlueprint)
-[2017.08.08-07.52.28:190][571]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 [0033.36] Compile of HeroTPP_FOHEART_AnimBlueprint successful, but with 24 Warning(s) [in 0 ms] (/Game/HeroTPP/Character/HeroTPP_FOHEART_AnimBlueprint.HeroTPP_FOHEART_AnimBlueprint)
-[2017.08.08-07.52.28:210][571]LogBlueprint:Warning: [Compiler PersistentLevel.DemoMap] 警告 节点 未知 未引用有效的关卡actor
-[2017.08.08-07.52.28:211][571]LogBlueprint:Warning: [Compiler PersistentLevel.DemoMap] 警告 [0033.38] Compile of PersistentLevel.DemoMap successful, but with 1 Warning(s) [in 1 ms] (/Game/DemoMap.DemoMap:PersistentLevel.DemoMap)
-[2017.08.08-07.52.28:211][571]LogBlueprint:Warning: [Compiler PersistentLevel.DemoMap] 警告 [0033.38] Compile of PersistentLevel.DemoMap successful, but with 2 Warning(s) [in 0 ms] (/Game/DemoMap.DemoMap:PersistentLevel.DemoMap)
-[2017.08.08-07.52.28:211][571]LogBlueprint:Warning: [Compiler PersistentLevel.DemoMap] 警告 [0033.38] Compile of PersistentLevel.DemoMap successful, but with 3 Warning(s) [in 0 ms] (/Game/DemoMap.DemoMap:PersistentLevel.DemoMap)
-[2017.08.08-07.52.28:212][571]LogBlueprint:Warning: [Compiler PersistentLevel.DemoMap] 警告 节点 未知 未引用有效的关卡actor
-[2017.08.08-07.52.28:213][571]LogBlueprint:Warning: [Compiler PersistentLevel.DemoMap] 警告 [0033.38] Compile of PersistentLevel.DemoMap successful, but with 1 Warning(s) [in 1 ms] (/Game/DemoMap.DemoMap:PersistentLevel.DemoMap)
-[2017.08.08-07.52.28:213][571]LogBlueprint:Warning: [Compiler PersistentLevel.DemoMap] 警告 [0033.38] Compile of PersistentLevel.DemoMap successful, but with 2 Warning(s) [in 0 ms] (/Game/DemoMap.DemoMap:PersistentLevel.DemoMap)
-[2017.08.08-07.52.28:213][571]LogBlueprint:Warning: [Compiler PersistentLevel.DemoMap] 警告 [0033.38] Compile of PersistentLevel.DemoMap successful, but with 3 Warning(s) [in 0 ms] (/Game/DemoMap.DemoMap:PersistentLevel.DemoMap)
-[2017.08.08-07.52.28:282][571]LogAIModule: Creating AISystem for world DemoMap
-[2017.08.08-07.52.28:302][571]Cmd: MAP LOAD FILE="J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/Content/DemoMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2017.08.08-07.52.28:302][571]LightingResults: New page: 光照构建
-[2017.08.08-07.52.28:303][571]LoadErrors: New page: 正在加载地图： DemoMap.umap
-[2017.08.08-07.52.28:303][571]MapCheck: New page: 地图检测
-[2017.08.08-07.52.28:303][571]LightingResults: New page: 光照构建
-[2017.08.08-07.52.28:314][571]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2017.08.08-07.52.28:344][571]Cmd: MAP CHECKDEP NOCLEARLOG
-[2017.08.08-07.52.28:409][571]MapCheck: 信息 地图检测完成：0个错误，0 个警告，用时65.392毫秒完成。
-[2017.08.08-07.52.28:409][571]LogFileHelpers: Loading map 'DemoMap' took 0.108
-[2017.08.08-07.52.29:550][701]LogTemp: Repeting last play command: 选中的视口
-[2017.08.08-07.52.29:572][701]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/DemoMap.DemoMap:PersistentLevel' has LevelScriptBlueprint '/Game/DemoMap.DemoMap:PersistentLevel.DemoMap' with GeneratedClass '/Game/DemoMap.DemoMap_C' with ClassGeneratedBy '/Game/DemoMap.DemoMap:PersistentLevel.DemoMap'
-[2017.08.08-07.52.29:572][701]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.08.08-07.52.29:572][701]PIE: New page: PIE会话: DemoMap (2017年8月8日 下午11:52:29)
-[2017.08.08-07.52.29:572][701]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_DemoMap
-[2017.08.08-07.52.29:575][701]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002463s)
-[2017.08.08-07.52.29:575][701]LogAIModule: Creating AISystem for world DemoMap
-[2017.08.08-07.52.29:576][701]LogPlayLevel: PIE: World Init took: (0.000685s)
-[2017.08.08-07.52.29:576][701]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/DemoMap.DemoMap to /Game/UEDPIE_0_DemoMap.DemoMap (0.003374s)
-[2017.08.08-07.52.29:593][701]LogInit: XAudio2 using '耳机 (High Definition Audio 设备)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2017.08.08-07.52.29:601][701]LogInit: FAudioDevice initialized.
-[2017.08.08-07.52.29:647][701]LogLoad: Game class is 'GameModeBase'
-[2017.08.08-07.52.29:650][701]LogWorld: Bringing World /Game/UEDPIE_0_DemoMap.DemoMap up for play (max tick rate 0) at 2017.08.08-15.52.29
-[2017.08.08-07.52.29:651][701]LogWorld: Bringing up level for play took: 0.001967
-[2017.08.08-07.52.29:687][701]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0020 seconds. Added 11 classes and 0 folders.
-[2017.08.08-07.52.29:688][701]LogScript:Warning: Accessed None trying to read property None_ExecuteUbergraph_DemoMap_RefProperty
-	DemoMap_C /Game/UEDPIE_0_DemoMap.DemoMap:PersistentLevel.DemoMap_C_0
+[2018.01.02-05.23.38:274][  0]LogInit: Selected Device Profile: [Windows]
+[2018.01.02-05.23.38:275][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2018.01.02-05.23.38:283][  0]LogInit: Computer: MAOXIAOHU-WIN7
+[2018.01.02-05.23.38:283][  0]LogInit: User: Administrator
+[2018.01.02-05.23.38:283][  0]LogInit: CPU Page size=4096, Cores=4
+[2018.01.02-05.23.38:283][  0]LogInit: High frequency timer resolution =3.221723 MHz
+[2018.01.02-05.23.38:283][  0]LogMemory: Memory total: Physical=23.9GB (24GB approx)
+[2018.01.02-05.23.38:283][  0]LogMemory: Platform Memory Stats for Windows
+[2018.01.02-05.23.38:283][  0]LogMemory: Process Physical Memory: 291.21 MB used, 291.21 MB peak
+[2018.01.02-05.23.38:283][  0]LogMemory: Process Virtual Memory: 265.87 MB used, 265.87 MB peak
+[2018.01.02-05.23.38:283][  0]LogMemory: Physical Memory: 10659.54 MB used,  13835.50 MB free, 24495.04 MB total
+[2018.01.02-05.23.38:283][  0]LogMemory: Virtual Memory: 782.61 MB used,  13835.50 MB free, 134217728.00 MB total
+[2018.01.02-05.23.38:363][  0]LogInit: Using OS detected language (zh-CN).
+[2018.01.02-05.23.38:363][  0]LogInit: Using OS detected locale (zh-CN).
+[2018.01.02-05.23.39:257][  0]LogD3D11RHI: D3D11 adapters:
+[2018.01.02-05.23.39:312][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 950' (Feature Level 11_0)
+[2018.01.02-05.23.39:312][  0]LogD3D11RHI:       2017/0/12247 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2018.01.02-05.23.39:316][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2018.01.02-05.23.39:316][  0]LogD3D11RHI:       0/0/12247 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2018.01.02-05.23.39:316][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2018.01.02-05.23.39:325][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2018.01.02-05.23.39:325][  0]LogD3D11RHI:     GPU DeviceId: 0x1402 (for the marketing name, search the web for "GPU Device Id")
+[2018.01.02-05.23.39:325][  0]LogWindows: EnumDisplayDevices:
+[2018.01.02-05.23.39:326][  0]LogWindows:    0. 'NVIDIA GeForce GTX 950' (P:1 D:1)
+[2018.01.02-05.23.39:326][  0]LogWindows:    1. 'NVIDIA GeForce GTX 950' (P:0 D:1)
+[2018.01.02-05.23.39:326][  0]LogWindows:    2. 'NVIDIA GeForce GTX 950' (P:0 D:0)
+[2018.01.02-05.23.39:326][  0]LogWindows:    3. 'NVIDIA GeForce GTX 950' (P:0 D:0)
+[2018.01.02-05.23.39:326][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2018.01.02-05.23.39:326][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 950
+[2018.01.02-05.23.39:326][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2018.01.02-05.23.39:326][  0]LogD3D11RHI:      Driver Date: Unknown
+[2018.01.02-05.23.39:326][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2018.01.02-05.23.39:359][  0]LogD3D11RHI: Async texture creation enabled
+[2018.01.02-05.23.39:746][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2018.01.02-05.23.39:795][  0]LogShaderCompilers: Guid format shader working directory is 14 characters bigger than the processId version (J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/Intermediate/Shaders/WorkingDirectory/13056/).
+[2018.01.02-05.23.39:795][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Administrator/AppData/Local/Temp/UnrealShaderWorkingDir/36E0F2574A8FFB1CE6A15FAB2057C92D/'.
+[2018.01.02-05.23.39:795][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2018.01.02-05.23.41:007][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2018.01.02-05.23.41:047][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2018.01.02-05.23.41:087][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2018.01.02-05.23.41:128][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2018.01.02-05.23.41:169][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2018.01.02-05.23.41:210][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2018.01.02-05.23.41:251][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2018.01.02-05.23.41:294][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2018.01.02-05.23.41:328][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2018.01.02-05.23.41:367][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2018.01.02-05.23.41:409][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2018.01.02-05.23.41:448][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2018.01.02-05.23.41:489][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2018.01.02-05.23.41:528][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2018.01.02-05.23.41:568][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2018.01.02-05.23.41:648][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2018.01.02-05.23.41:648][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2018.01.02-05.23.41:682][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2018.01.02-05.23.41:761][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2018.01.02-05.23.41:786][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2018.01.02-05.23.41:829][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2018.01.02-05.23.41:868][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2018.01.02-05.23.41:909][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2018.01.02-05.23.41:949][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2018.01.02-05.23.41:949][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2018.01.02-05.23.42:315][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2018.01.02-05.23.42:407][  0]LogDerivedDataCache: Loaded boot cache 0.09s 90MB C:/Users/Administrator/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2018.01.02-05.23.42:407][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Administrator/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc
+[2018.01.02-05.23.42:407][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2018.01.02-05.23.42:407][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2018.01.02-05.23.42:407][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2018.01.02-05.23.42:407][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2018.01.02-05.23.42:423][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2018.01.02-05.23.42:437][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Administrator/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2018.01.02-05.23.42:446][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2018.01.02-05.23.42:447][  0]LogSlate: Using Freetype 2.6.0
+[2018.01.02-05.23.42:447][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.01.02-05.23.42:447][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.01.02-05.23.42:777][  0]LogInit: Selected Device Profile: [Windows]
+[2018.01.02-05.23.42:849][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2018.01.02-05.23.42:988][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2018.01.02-05.23.43:024][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2018.01.02-05.23.43:065][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2018.01.02-05.23.43:065][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2018.01.02-05.23.43:065][  0]LogMeshUtilities: No automatic mesh merging module available
+[2018.01.02-05.23.43:552][  0]LogNetVersion: FOHEARTPlugin , NetCL: 3452394, EngineNetVer: 2, GameNetVer: 0 (Checksum: 481050671)
+[2018.01.02-05.23.43:606][  0]LogAssetRegistry: FAssetRegistry took 0.0252 seconds to start up
+[2018.01.02-05.23.43:723][  0]LogPackageLocalizationCache: Processed 5 localized package path(s) for 4 prioritized culture(s) in 0.102312 seconds
+[2018.01.02-05.23.43:729][  0]LogUObjectArray: 34194 objects as part of root set at end of initial load.
+[2018.01.02-05.23.43:729][  0]LogUObjectAllocator: 7260424 out of 0 bytes used by permanent object pool.
+[2018.01.02-05.23.43:729][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2018.01.02-05.23.43:773][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2018.01.02-05.23.46:260][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2018.01.02-05.23.46:296][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2018.01.02-05.23.46:814][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2018.01.02-05.23.47:168][  0]SourceControl: 信息 源码控制已禁用
+[2018.01.02-05.23.47:171][  0]SourceControl: 信息 源码控制已禁用
+[2018.01.02-05.23.47:212][  0]SourceControl: 信息 源码控制已禁用
+[2018.01.02-05.23.47:254][  0]SourceControl: 信息 源码控制已禁用
+[2018.01.02-05.23.47:463][  0]LogLinker:Warning: 无法寻找到文件'/Game/ThirdPersonCPP/ThirdPersonOverview'
+[2018.01.02-05.23.47:463][  0]LogLinker:Warning: 无法寻找到文件'/Game/ThirdPersonCPP/ThirdPersonOverview'
+[2018.01.02-05.23.47:463][  0]LogUObjectGlobals:Warning: 寻找对象'Class /Game/ThirdPersonCPP/ThirdPersonOverview.ThirdPersonOverview_C'失败
+[2018.01.02-05.23.47:829][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2018.01.02-05.23.48:292][  0]LogInit: Plugin For FOHEART C1 & FOHEART LEO start.
+[2018.01.02-05.23.48:383][  0]LogEngine: Initializing Engine...
+[2018.01.02-05.23.48:385][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2018.01.02-05.23.48:579][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.01.02-05.23.48:579][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2018.01.02-05.23.48:681][  0]LogAIModule: Creating AISystem for world Untitled
+[2018.01.02-05.23.48:694][  0]LogInit: XAudio2 using '耳机 (High Definition Audio 设备)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.01.02-05.23.48:725][  0]LogInit: FAudioDevice initialized.
+[2018.01.02-05.23.48:776][  0]LogDerivedDataCache: Saved boot cache 0.05s 90MB C:/Users/Administrator/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2018.01.02-05.23.48:786][  0]LogInit: Texture streaming: Enabled
+[2018.01.02-05.23.48:864][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2018.01.02-05.23.49:039][  0]LogInit: Transaction tracking system initialized
+[2018.01.02-05.23.50:182][  0]BlueprintLog: New page: 编辑器加载
+[2018.01.02-05.23.50:913][  0]LocalizationService: 信息 本地化服务已被禁用
+[2018.01.02-05.23.51:455][  0]LogConsoleResponse:Display: 
+[2018.01.02-05.23.51:583][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2018.01.02-05.23.51:583][  0]LogCook:Display: Mobile HDR setting 1
+[2018.01.02-05.23.52:380][  0]LogFileCache: Scanning file cache for directory 'J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/Content/' took 0.01s
+[2018.01.02-05.23.52:416][  0]SourceControl: 信息 源码控制已禁用
+[2018.01.02-05.23.52:416][  0]Cmd: MAP LOAD FILE="../../../Engine/Content/Maps/Templates/Template_Default.umap" TEMPLATE=1 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.01.02-05.23.52:417][  0]LightingResults: New page: 光照构建
+[2018.01.02-05.23.52:449][  0]MapCheck: New page: 地图检测
+[2018.01.02-05.23.52:449][  0]LightingResults: New page: 光照构建
+[2018.01.02-05.23.52:625][  0]LogAIModule: Creating AISystem for world Untitled_1
+[2018.01.02-05.23.52:626][  0]LogActorComponent: RegisterComponentWithWorld: (/Temp/Untitled_1.Untitled_1:PersistentLevel.WorldSettings_1.StaticMeshComponent0) Trying to register component with IsPendingKill() == true. Aborting.
+[2018.01.02-05.23.52:630][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.01.02-05.23.52:642][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.01.02-05.23.52:702][  0]MapCheck: 信息 地图检测完成：0个错误，0 个警告，用时60.044毫秒完成。
+[2018.01.02-05.23.52:702][  0]LogFileHelpers: Loading map 'Template_Default' took 0.287
+[2018.01.02-05.23.52:942][  0]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (搜狗拼音输入法).
+[2018.01.02-05.23.53:030][  0]LogCollectionManager: Loaded 0 collections in 0.001025 seconds
+[2018.01.02-05.23.53:133][  0]LogFileCache: Scanning file cache for directory 'J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/Saved/Collections/' took 0.01s
+[2018.01.02-05.23.53:133][  0]LogFileCache: Scanning file cache for directory 'J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/Content/Developers/Administrator/Collections/' took 0.01s
+[2018.01.02-05.23.53:133][  0]LogFileCache: Scanning file cache for directory 'J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/Content/Collections/' took 0.01s
+[2018.01.02-05.23.53:133][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2018.01.02-05.23.53:143][  0]LogContentBrowser: Native class hierarchy populated in 0.0100 seconds. Added 2332 classes and 496 folders.
+[2018.01.02-05.23.53:194][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0021 seconds. Added 0 classes and 0 folders.
+[2018.01.02-05.23.53:270][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0020 seconds. Added 0 classes and 0 folders.
+[2018.01.02-05.23.53:309][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0021 seconds. Added 1 classes and 2 folders.
+[2018.01.02-05.23.53:343][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2018.01.02-05.23.53:357][  0]LogUObjectGlobals:Warning: 寻找对象'Class 无.'失败
+[2018.01.02-05.23.53:419][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0022 seconds. Added 1 classes and 2 folders.
+[2018.01.02-05.23.53:419][  0]LogLoad: (Engine Initialization) Total time: 76.33 seconds
+[2018.01.02-05.23.53:419][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.08 seconds
+[2018.01.02-05.23.53:419][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2018.01.02-05.23.53:419][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2018.01.02-05.23.53:429][  0]LogOcInput: OculusInput pre-init called
+[2018.01.02-05.23.53:429][  0]LogHMD: Starting GearVRController plugin
+[2018.01.02-05.23.53:442][  0]LogAssetRegistry: Asset discovery search completed in 9.8571 seconds
+[2018.01.02-05.23.53:443][  0]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2018.01.02-05.23.53:443][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000057 seconds (updated 0 objects)
+[2018.01.02-05.23.53:445][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2018.01.02-05.23.53:454][  0]LogSlate: Took 0.000354 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2018.01.02-05.23.53:457][  0]LogSlate: Took 0.002188 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansFallback.ttf' (3848K)
+[2018.01.02-05.23.53:457][  0]LogSlate: Took 0.000315 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2018.01.02-05.23.53:461][  0]LogSlate: Took 0.000372 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2018.01.02-05.23.53:547][  0]LogSlate: Took 0.000421 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2018.01.02-05.23.53:589][  2]LogRenderer: Reallocating scene render targets to support 996x468 NumSamples 1 (Frame:1).
+[2018.01.02-05.24.36:626][903]LogSlate: Took 0.000293 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2018.01.02-05.24.36:755][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告  序列 没有有效输出
+[2018.01.02-05.24.36:757][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: spine_01  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+[2018.01.02-05.24.36:757][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: pelvis  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+[2018.01.02-05.24.36:757][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: spine_03  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+[2018.01.02-05.24.36:757][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: spine_02  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+[2018.01.02-05.24.36:757][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: neck_01  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+[2018.01.02-05.24.36:758][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: upperarm_r  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+[2018.01.02-05.24.36:758][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: clavicle_r  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+[2018.01.02-05.24.36:758][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: hand_r  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+[2018.01.02-05.24.36:758][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: lowerarm_r  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+[2018.01.02-05.24.36:758][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: lowerarm_l  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+[2018.01.02-05.24.36:758][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: hand_l  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+[2018.01.02-05.24.36:758][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: clavicle_l  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+[2018.01.02-05.24.36:758][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: upperarm_l  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+[2018.01.02-05.24.36:758][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: calf_r  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+[2018.01.02-05.24.36:758][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: thigh_r  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+[2018.01.02-05.24.36:758][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: ball_r  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+[2018.01.02-05.24.36:758][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: foot_r  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+[2018.01.02-05.24.36:758][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: calf_l  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+[2018.01.02-05.24.36:758][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: thigh_l  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+[2018.01.02-05.24.36:758][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: ball_l  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+[2018.01.02-05.24.36:758][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: foot_l  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+[2018.01.02-05.24.36:759][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 [0119.67] Compile of HeroTPP_FOHEART_AnimBlueprint successful, but with 22 Warning(s) [in 37 ms] (/Game/HeroTPP/Character/HeroTPP_FOHEART_AnimBlueprint.HeroTPP_FOHEART_AnimBlueprint)
+[2018.01.02-05.24.36:759][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 [0119.67] Compile of HeroTPP_FOHEART_AnimBlueprint successful, but with 23 Warning(s) [in 0 ms] (/Game/HeroTPP/Character/HeroTPP_FOHEART_AnimBlueprint.HeroTPP_FOHEART_AnimBlueprint)
+[2018.01.02-05.24.36:759][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 [0119.67] Compile of HeroTPP_FOHEART_AnimBlueprint successful, but with 24 Warning(s) [in 0 ms] (/Game/HeroTPP/Character/HeroTPP_FOHEART_AnimBlueprint.HeroTPP_FOHEART_AnimBlueprint)
+[2018.01.02-05.24.36:794][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告  序列 没有有效输出
+[2018.01.02-05.24.36:797][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: spine_01  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+[2018.01.02-05.24.36:797][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: pelvis  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+[2018.01.02-05.24.36:797][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: spine_03  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+[2018.01.02-05.24.36:797][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: spine_02  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+[2018.01.02-05.24.36:797][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: neck_01  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+[2018.01.02-05.24.36:797][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: upperarm_r  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+[2018.01.02-05.24.36:797][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: clavicle_r  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+[2018.01.02-05.24.36:797][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: hand_r  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+[2018.01.02-05.24.36:797][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: lowerarm_r  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+[2018.01.02-05.24.36:797][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: lowerarm_l  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+[2018.01.02-05.24.36:797][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: hand_l  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+[2018.01.02-05.24.36:797][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: clavicle_l  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+[2018.01.02-05.24.36:797][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: upperarm_l  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+[2018.01.02-05.24.36:797][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: calf_r  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+[2018.01.02-05.24.36:798][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: thigh_r  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+[2018.01.02-05.24.36:798][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: ball_r  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+[2018.01.02-05.24.36:798][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: foot_r  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+[2018.01.02-05.24.36:798][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: calf_l  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+[2018.01.02-05.24.36:798][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: thigh_l  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+[2018.01.02-05.24.36:798][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: ball_l  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+[2018.01.02-05.24.36:798][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 Node  变换(修改) 骨骼 - 骨骼: foot_l  uses potentially thread-unsafe call  Get BVH Bone Index . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+[2018.01.02-05.24.36:798][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 [0119.71] Compile of HeroTPP_FOHEART_AnimBlueprint successful, but with 22 Warning(s) [in 35 ms] (/Game/HeroTPP/Character/HeroTPP_FOHEART_AnimBlueprint.HeroTPP_FOHEART_AnimBlueprint)
+[2018.01.02-05.24.36:798][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 [0119.71] Compile of HeroTPP_FOHEART_AnimBlueprint successful, but with 23 Warning(s) [in 0 ms] (/Game/HeroTPP/Character/HeroTPP_FOHEART_AnimBlueprint.HeroTPP_FOHEART_AnimBlueprint)
+[2018.01.02-05.24.36:798][903]LogBlueprint:Warning: [Compiler HeroTPP_FOHEART_AnimBlueprint] 警告 [0119.71] Compile of HeroTPP_FOHEART_AnimBlueprint successful, but with 24 Warning(s) [in 0 ms] (/Game/HeroTPP/Character/HeroTPP_FOHEART_AnimBlueprint.HeroTPP_FOHEART_AnimBlueprint)
+[2018.01.02-05.24.36:819][903]LogBlueprint:Warning: [Compiler PersistentLevel.DemoMap] 警告 节点 未知 未引用有效的关卡actor
+[2018.01.02-05.24.36:820][903]LogBlueprint:Warning: [Compiler PersistentLevel.DemoMap] 警告 [0119.73] Compile of PersistentLevel.DemoMap successful, but with 1 Warning(s) [in 1 ms] (/Game/DemoMap.DemoMap:PersistentLevel.DemoMap)
+[2018.01.02-05.24.36:820][903]LogBlueprint:Warning: [Compiler PersistentLevel.DemoMap] 警告 [0119.73] Compile of PersistentLevel.DemoMap successful, but with 2 Warning(s) [in 0 ms] (/Game/DemoMap.DemoMap:PersistentLevel.DemoMap)
+[2018.01.02-05.24.36:820][903]LogBlueprint:Warning: [Compiler PersistentLevel.DemoMap] 警告 [0119.73] Compile of PersistentLevel.DemoMap successful, but with 3 Warning(s) [in 0 ms] (/Game/DemoMap.DemoMap:PersistentLevel.DemoMap)
+[2018.01.02-05.24.36:822][903]LogBlueprint:Warning: [Compiler PersistentLevel.DemoMap] 警告 节点 未知 未引用有效的关卡actor
+[2018.01.02-05.24.36:822][903]LogBlueprint:Warning: [Compiler PersistentLevel.DemoMap] 警告 [0119.73] Compile of PersistentLevel.DemoMap successful, but with 1 Warning(s) [in 1 ms] (/Game/DemoMap.DemoMap:PersistentLevel.DemoMap)
+[2018.01.02-05.24.36:822][903]LogBlueprint:Warning: [Compiler PersistentLevel.DemoMap] 警告 [0119.73] Compile of PersistentLevel.DemoMap successful, but with 2 Warning(s) [in 0 ms] (/Game/DemoMap.DemoMap:PersistentLevel.DemoMap)
+[2018.01.02-05.24.36:822][903]LogBlueprint:Warning: [Compiler PersistentLevel.DemoMap] 警告 [0119.73] Compile of PersistentLevel.DemoMap successful, but with 3 Warning(s) [in 0 ms] (/Game/DemoMap.DemoMap:PersistentLevel.DemoMap)
+[2018.01.02-05.24.36:898][903]LogAIModule: Creating AISystem for world DemoMap
+[2018.01.02-05.24.36:921][903]Cmd: MAP LOAD FILE="J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/Content/DemoMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.01.02-05.24.36:921][903]LightingResults: New page: 光照构建
+[2018.01.02-05.24.36:922][903]LoadErrors: New page: 正在加载地图： DemoMap.umap
+[2018.01.02-05.24.36:922][903]MapCheck: New page: 地图检测
+[2018.01.02-05.24.36:922][903]LightingResults: New page: 光照构建
+[2018.01.02-05.24.36:934][903]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.01.02-05.24.36:978][903]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.01.02-05.24.37:037][903]MapCheck: 信息 地图检测完成：0个错误，0 个警告，用时58.85毫秒完成。
+[2018.01.02-05.24.37:037][903]LogFileHelpers: Loading map 'DemoMap' took 0.117
+[2018.01.02-05.24.38:262][ 30]LogEditorViewport: Clicking on Actor (LMB): HeroTPPBlueprint_C (HeroTPPBlueprint2)
+[2018.01.02-05.24.46:882][974]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/DemoMap" FILE="J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/Content/DemoMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2018.01.02-05.24.46:903][974]LogBlueprint:Warning: [Compiler PersistentLevel.DemoMap] 警告 节点 未知 未引用有效的关卡actor
+[2018.01.02-05.24.46:903][974]LogBlueprint:Warning: [Compiler PersistentLevel.DemoMap] 警告 [0129.81] Compile of PersistentLevel.DemoMap successful, but with 1 Warning(s) [in 3 ms] (/Game/DemoMap.DemoMap:PersistentLevel.DemoMap)
+[2018.01.02-05.24.46:904][974]LogBlueprint:Warning: [Compiler PersistentLevel.DemoMap] 警告 [0129.81] Compile of PersistentLevel.DemoMap successful, but with 2 Warning(s) [in 0 ms] (/Game/DemoMap.DemoMap:PersistentLevel.DemoMap)
+[2018.01.02-05.24.46:904][974]LogBlueprint:Warning: [Compiler PersistentLevel.DemoMap] 警告 [0129.81] Compile of PersistentLevel.DemoMap successful, but with 3 Warning(s) [in 0 ms] (/Game/DemoMap.DemoMap:PersistentLevel.DemoMap)
+[2018.01.02-05.24.46:938][974]LogBlueprint:Warning: [Compiler PersistentLevel.DemoMap] 警告 [0129.85] Compile of PersistentLevel.DemoMap successful, but with 4 Warning(s) [in 34 ms] (/Game/DemoMap.DemoMap:PersistentLevel.DemoMap)
+[2018.01.02-05.24.46:938][974]LogBlueprint:Warning: [Compiler PersistentLevel.DemoMap] 警告 [0129.85] Compile of PersistentLevel.DemoMap successful, but with 5 Warning(s) [in 0 ms] (/Game/DemoMap.DemoMap:PersistentLevel.DemoMap)
+[2018.01.02-05.24.46:938][974]LogBlueprint:Warning: [Compiler PersistentLevel.DemoMap] 警告 [0129.85] Compile of PersistentLevel.DemoMap successful, but with 6 Warning(s) [in 0 ms] (/Game/DemoMap.DemoMap:PersistentLevel.DemoMap)
+[2018.01.02-05.24.47:000][974]LogSavePackage: Save=104.53ms
+[2018.01.02-05.24.47:000][974]LogSavePackage: Moving 'J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/Saved/DemoMap2A988D5F42819F202EBFB9AD16B905AB.tmp' to 'J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/Content/DemoMap.umap'
+[2018.01.02-05.24.47:003][974]LogSavePackage:Display: Finished SavePackage J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/Content/DemoMap.umap
+[2018.01.02-05.24.47:027][974]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/DemoMap_BuiltData" FILE="J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/Content/DemoMap_BuiltData.uasset" SILENT=true
+[2018.01.02-05.24.47:043][974]LogSavePackage: Save=12.45ms
+[2018.01.02-05.24.47:043][974]LogSavePackage: Moving 'J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/Saved/DemoMap_BuiltData6531958D4AC2F0B54B818B9E262E3660.tmp' to 'J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/Content/DemoMap_BuiltData.uasset'
+[2018.01.02-05.24.47:045][974]LogSavePackage:Display: Finished SavePackage J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/Content/DemoMap_BuiltData.uasset
+[2018.01.02-05.24.49:510][232]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/DemoMap" FILE="J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/Content/DemoMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2018.01.02-05.24.49:527][232]LogBlueprint:Warning: [Compiler PersistentLevel.DemoMap] 警告 节点 未知 未引用有效的关卡actor
+[2018.01.02-05.24.49:528][232]LogBlueprint:Warning: [Compiler PersistentLevel.DemoMap] 警告 [0132.44] Compile of PersistentLevel.DemoMap successful, but with 1 Warning(s) [in 3 ms] (/Game/DemoMap.DemoMap:PersistentLevel.DemoMap)
+[2018.01.02-05.24.49:528][232]LogBlueprint:Warning: [Compiler PersistentLevel.DemoMap] 警告 [0132.44] Compile of PersistentLevel.DemoMap successful, but with 2 Warning(s) [in 0 ms] (/Game/DemoMap.DemoMap:PersistentLevel.DemoMap)
+[2018.01.02-05.24.49:528][232]LogBlueprint:Warning: [Compiler PersistentLevel.DemoMap] 警告 [0132.44] Compile of PersistentLevel.DemoMap successful, but with 3 Warning(s) [in 0 ms] (/Game/DemoMap.DemoMap:PersistentLevel.DemoMap)
+[2018.01.02-05.24.49:563][232]LogBlueprint:Warning: [Compiler PersistentLevel.DemoMap] 警告 [0132.47] Compile of PersistentLevel.DemoMap successful, but with 4 Warning(s) [in 33 ms] (/Game/DemoMap.DemoMap:PersistentLevel.DemoMap)
+[2018.01.02-05.24.49:563][232]LogBlueprint:Warning: [Compiler PersistentLevel.DemoMap] 警告 [0132.47] Compile of PersistentLevel.DemoMap successful, but with 5 Warning(s) [in 0 ms] (/Game/DemoMap.DemoMap:PersistentLevel.DemoMap)
+[2018.01.02-05.24.49:563][232]LogBlueprint:Warning: [Compiler PersistentLevel.DemoMap] 警告 [0132.47] Compile of PersistentLevel.DemoMap successful, but with 6 Warning(s) [in 0 ms] (/Game/DemoMap.DemoMap:PersistentLevel.DemoMap)
+[2018.01.02-05.24.49:657][232]LogSavePackage: Save=136.64ms
+[2018.01.02-05.24.49:658][232]LogSavePackage: Moving 'J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/Saved/DemoMap4C549A3B4E9414B237D8F4A75188A51B.tmp' to 'J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/Content/DemoMap.umap'
+[2018.01.02-05.24.49:660][232]LogSavePackage:Display: Finished SavePackage J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/Content/DemoMap.umap
+[2018.01.02-05.24.49:685][232]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/DemoMap_BuiltData" FILE="J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/Content/DemoMap_BuiltData.uasset" SILENT=true
+[2018.01.02-05.24.49:701][232]LogSavePackage: Save=14.12ms
+[2018.01.02-05.24.49:701][232]LogSavePackage: Moving 'J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/Saved/DemoMap_BuiltData7909FFF64896D80AD6E3869D564B73B5.tmp' to 'J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/Content/DemoMap_BuiltData.uasset'
+[2018.01.02-05.24.49:703][232]LogSavePackage:Display: Finished SavePackage J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/Content/DemoMap_BuiltData.uasset
+[2018.01.02-05.24.51:195][395]LogVSAccessor:Warning: Couldn't save all documents
+[2018.01.02-05.24.51:206][395]Candidate modules for hot reload:
+[2018.01.02-05.24.51:206][395]  FOHEARTPlugin
+[2018.01.02-05.24.51:206][395]Launching UnrealBuildTool... [G:/Unreal Projects/UE_4.16/Engine/Binaries/DotNET/UnrealBuildTool.exe FOHEARTPlugin -ModuleWithSuffix FOHEARTPlugin 7452 Win64 Development -editorrecompile -canskiplink "J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/FOHEARTPlugin.uproject" ]
+[2018.01.02-05.24.51:208][395]Warning: Starting HotReload took  0.0s.
+[2018.01.02-05.24.52:500][483]LogSlate: Took 0.000318 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2018.01.02-05.24.56:529][597]CompilerResultsLog: New page: 编译- 2018年1月2日 下午9:24:56
+[2018.01.02-05.24.56:529][597]CompilerResultsLog: 信息 Performing full C++ include scan (hot reloading a new target)
+[2018.01.02-05.24.56:529][597]CompilerResultsLog: 信息 Compiling game modules for hot reload
+[2018.01.02-05.24.56:529][597]CompilerResultsLog: 信息 Target is up to date
+[2018.01.02-05.24.56:529][597]CompilerResultsLog: 信息 Total build time: 4.45 seconds (NoActionsToExecute executor: 0.00 seconds)
+[2018.01.02-05.24.56:529][597]LogMainFrame: MainFrame: Module compiling took 5.333 seconds
+[2018.01.02-05.24.56:552][597]LogContentBrowser: Native class hierarchy populated in 0.0106 seconds. Added 2334 classes and 500 folders.
+[2018.01.02-05.24.56:552][597]Display: HotReload took  5.4s.
+[2018.01.02-05.26.38:120][696]MapCheck: New page: 地图检测
+[2018.01.02-05.26.38:140][696]Cmd: MAP REBUILD ALLVISIBLE
+[2018.01.02-05.26.38:140][696]LogEditorServer: Rebuildmap Clear paths rebuilt
+[2018.01.02-05.26.38:224][696]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy WorldGridMaterial, compiling. Is special engine material.
+[2018.01.02-05.26.38:233][696]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy DefaultMaterial, compiling. 
+[2018.01.02-05.26.38:239][696]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy MaterialInstanceDynamic_2, compiling. 
+[2018.01.02-05.26.38:248][696]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy DefaultTextMaterialOpaque, compiling. 
+[2018.01.02-05.26.38:256][696]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy MI_Template_BaseBlue, compiling. 
+[2018.01.02-05.26.40:167][696]TextureStreamingBuild:Display: Compiling optional shaders took 1.949 seconds.
+[2018.01.02-05.26.40:173][696]LogLevel:Display: Export Material TexCoord Scales took 0.005 seconds.
+[2018.01.02-05.26.40:177][696]TextureStreamingBuild:Display: Build Texture Streaming took 0.004 seconds.
+[2018.01.02-05.26.40:184][696]LightingResults: New page: 光照构建-  2018年1月2日 下午9:26:40
+[2018.01.02-05.26.40:221][696]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2018.01.02-05.26.40:261][696]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2018.01.02-05.26.40:272][696]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2018.01.02-05.26.41:304][696]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2018.01.02-05.26.41:304][696]LogSwarmInterface: [TryOpenConnection] Local Process ID is 13056
+[2018.01.02-05.26.44:385][696]LogStaticLightingSystem:Warning: No importance volume found, so the scene bounding box was used.  You can optimize your scene's quality and lighting build times by adding importance volumes.
+[2018.01.02-05.26.44:385][696]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2018.01.02-05.26.44:385][696]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2018.01.02-05.26.44:385][696]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2018.01.02-05.26.44:385][696]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2018.01.02-05.26.44:385][696]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2018.01.02-05.26.44:530][696]Cmd: MAP CHECK DONTDISPLAYDIALOG
+[2018.01.02-05.26.44:530][696]MapCheck: New page: DemoMap - 2018年1月2日 下午9:26:44
+[2018.01.02-05.26.44:587][696]MapCheck: 信息 地图检测完成：0个错误，0 个警告，用时57.32毫秒完成。
+[2018.01.02-05.26.44:610][696]LogEditorBuildUtils: Build time 0:06
+[2018.01.02-05.26.50:158][ 81]Job is a success!
+[2018.01.02-05.26.50:304][ 82]LogTexture:Display: Building textures: SkyOcclusion1_1 (AutoDXT, 256X128)
+[2018.01.02-05.26.50:304][ 82]LogTexture:Display: Building textures: LQ_Lightmap_1_1 (DXT1, 256X256)
+[2018.01.02-05.26.50:304][ 82]LogTexture:Display: Building textures: HQ_Lightmap1_1 (AutoDXT, 256X256)
+[2018.01.02-05.26.50:304][ 82]LogTexture:Display: Building textures: SkyOcclusion1_2 (AutoDXT, 64X32)
+[2018.01.02-05.26.50:304][ 82]LogTexture:Display: Building textures: HQ_Lightmap1_2 (AutoDXT, 64X64)
+[2018.01.02-05.26.50:304][ 82]LogTexture:Display: Building textures: LQ_Lightmap_1_2 (DXT1, 64X64)
+[2018.01.02-05.26.50:304][ 82]LogTexture:Display: Building textures: ShadowMapTexture2D_3 (G8, 32X32)
+[2018.01.02-05.26.50:304][ 82]LogTexture:Display: Building textures: ShadowMapTexture2D_2 (G8, 128X128)
+[2018.01.02-05.26.50:361][ 82]LogStaticLightingSystem: Illumination: 10.1 sec (24 ms encoding lightmaps, 30 ms encoding shadowmaps)
+[2018.01.02-05.26.50:361][ 82]LogStaticLightingSystem: Lightmap texture memory:  0.2 MB (0.2 MB streaming, 0.0 MB non-streaming), 4 textures
+[2018.01.02-05.26.50:361][ 82]LogStaticLightingSystem: Shadowmap texture memory: 0.0 MB (0.0 MB streaming, 0.0 MB non-streaming), 2 textures
+[2018.01.02-05.26.50:383][ 82]DumpUnbuiltLightIteractions
+[2018.01.02-05.26.50:383][ 82]Lights with unbuilt interactions: 0
+[2018.01.02-05.26.50:383][ 82]
+[2018.01.02-05.26.50:383][ 82]Primitives with unbuilt interactions: 0
+[2018.01.02-05.26.50:426][ 83]Cmd: MAP CHECK NOTIFYRESULTS
+[2018.01.02-05.26.50:427][ 83]MapCheck: New page: DemoMap - 2018年1月2日 下午9:26:50
+[2018.01.02-05.26.50:486][ 83]MapCheck: 信息 地图检测完成：0个错误，0 个警告，用时58.755毫秒完成。
+[2018.01.02-05.31.15:732][ 71]LogTemp: Repeting last play command: 选中的视口
+[2018.01.02-05.31.15:773][ 71]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/DemoMap.DemoMap:PersistentLevel' has LevelScriptBlueprint '/Game/DemoMap.DemoMap:PersistentLevel.DemoMap' with GeneratedClass '/Game/DemoMap.DemoMap_C' with ClassGeneratedBy '/Game/DemoMap.DemoMap:PersistentLevel.DemoMap'
+[2018.01.02-05.31.15:773][ 71]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.01.02-05.31.15:773][ 71]PIE: New page: PIE会话: DemoMap (2018年1月2日 下午9:31:15)
+[2018.01.02-05.31.15:773][ 71]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_DemoMap
+[2018.01.02-05.31.15:776][ 71]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003019s)
+[2018.01.02-05.31.15:777][ 71]LogAIModule: Creating AISystem for world DemoMap
+[2018.01.02-05.31.15:777][ 71]LogPlayLevel: PIE: World Init took: (0.001103s)
+[2018.01.02-05.31.15:777][ 71]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/DemoMap.DemoMap to /Game/UEDPIE_0_DemoMap.DemoMap (0.004366s)
+[2018.01.02-05.31.15:834][ 71]LogInit: XAudio2 using '耳机 (High Definition Audio 设备)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.01.02-05.31.15:844][ 71]LogInit: FAudioDevice initialized.
+[2018.01.02-05.31.15:890][ 71]LogLoad: Game class is 'GameModeBase'
+[2018.01.02-05.31.15:893][ 71]LogWorld: Bringing World /Game/UEDPIE_0_DemoMap.DemoMap up for play (max tick rate 0) at 2018.01.02-13.31.15
+[2018.01.02-05.31.15:893][ 71]LogWorld: Bringing up level for play took: 0.002005
+[2018.01.02-05.31.15:928][ 71]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0021 seconds. Added 11 classes and 0 folders.
+[2018.01.02-05.31.15:929][ 71]LogScript:Warning: Accessed None trying to read property None_ExecuteUbergraph_DemoMap_RefProperty
+	DemoMap_C /Game/UEDPIE_0_DemoMap.DemoMap:PersistentLevel.DemoMap_C_1
 	Function /Game/DemoMap.DemoMap_C:ExecuteUbergraph_DemoMap:0032
-[2017.08.08-07.52.29:688][701]PIE:Error: 错误 Blueprint Runtime Error: Accessed None trying to read property None_ExecuteUbergraph_DemoMap_RefProperty from function: 'ExecuteUbergraph_DemoMap' from node: 类型转换为 HeroTPP_FOHEART_AnimBlueprint in graph: EventGraph in object: DemoMap with description: Accessed None trying to read property None_ExecuteUbergraph_DemoMap_RefProperty
-[2017.08.08-07.52.29:688][701]LogScript:Warning: Accessed None
-	DemoMap_C /Game/UEDPIE_0_DemoMap.DemoMap:PersistentLevel.DemoMap_C_0
+[2018.01.02-05.31.15:930][ 71]PIE:Error: 错误 Blueprint Runtime Error: Accessed None trying to read property None_ExecuteUbergraph_DemoMap_RefProperty from function: 'ExecuteUbergraph_DemoMap' from node: 类型转换为 HeroTPP_FOHEART_AnimBlueprint in graph: EventGraph in object: DemoMap with description: Accessed None trying to read property None_ExecuteUbergraph_DemoMap_RefProperty
+[2018.01.02-05.31.15:930][ 71]LogScript:Warning: Accessed None
+	DemoMap_C /Game/UEDPIE_0_DemoMap.DemoMap:PersistentLevel.DemoMap_C_1
 	Function /Game/DemoMap.DemoMap_C:ExecuteUbergraph_DemoMap:0047
-[2017.08.08-07.52.29:688][701]PIE:Error: 错误 Blueprint Runtime Error: Accessed None from function: 'ExecuteUbergraph_DemoMap' from node: 类型转换为 HeroTPP_FOHEART_AnimBlueprint in graph: EventGraph in object: DemoMap with description: Accessed None
-[2017.08.08-07.52.29:688][701]PIE: 信息 /Game/UEDPIE_0_DemoMap的‘在编辑器中播放’的起始时间0.265
-[2017.08.08-07.52.29:689][701]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/DemoMap.DemoMap:PersistentLevel' has LevelScriptBlueprint '/Game/DemoMap.DemoMap:PersistentLevel.DemoMap' with GeneratedClass '/Game/DemoMap.DemoMap_C' with ClassGeneratedBy '/Game/DemoMap.DemoMap:PersistentLevel.DemoMap'
-[2017.08.08-07.52.29:749][702]LogInit: Data skipped: 542 0
-[2017.08.08-07.52.30:712][817]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/DemoMap.DemoMap:PersistentLevel' has LevelScriptBlueprint '/Game/DemoMap.DemoMap:PersistentLevel.DemoMap' with GeneratedClass '/Game/DemoMap.DemoMap_C' with ClassGeneratedBy '/Game/DemoMap.DemoMap:PersistentLevel.DemoMap'
-[2017.08.08-07.52.30:741][817]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/DemoMap.DemoMap:PersistentLevel' has LevelScriptBlueprint '/Game/DemoMap.DemoMap:PersistentLevel.DemoMap' with GeneratedClass '/Game/DemoMap.DemoMap_C' with ClassGeneratedBy '/Game/DemoMap.DemoMap:PersistentLevel.DemoMap'
-[2017.08.08-07.52.34:661][257]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (搜狗拼音输入法).
-[2017.08.08-07.52.34:830][258]Cmd: QUIT_EDITOR
-[2017.08.08-07.52.35:810][258]LogExit: Preparing to exit.
-[2017.08.08-07.52.36:413][258]LogExit: Editor shut down
-[2017.08.08-07.52.36:418][258]LogExit: Transaction tracking system shut down
-[2017.08.08-07.52.36:486][258]LogObj: Freed 0b from 0 cluster array pools.
-[2017.08.08-07.52.36:486][258]LogExit: Object subsystem successfully closed.
-[2017.08.08-07.52.36:508][258]LogD3D11RHI: Shutdown
-[2017.08.08-07.52.36:508][258]LogD3D11RHI: CleanupD3DDevice
-[2017.08.08-07.52.36:594][258]LogD3D11RHI: ~FD3D11DynamicRHI
-[2017.08.08-07.52.36:604][258]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (530)
-[2017.08.08-07.52.36:604][258]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (528)
-[2017.08.08-07.52.36:604][258]LogModuleManager: Shutting down and abandoning module CrashTracker (526)
-[2017.08.08-07.52.36:604][258]LogModuleManager: Shutting down and abandoning module SceneOutliner (524)
-[2017.08.08-07.52.36:604][258]LogModuleManager: Shutting down and abandoning module AddContentDialog (522)
-[2017.08.08-07.52.36:604][258]LogDirectoryWatcher: A directory notification for 'G:/Unreal Projects/UE_4.16/FeaturePacks/' was aborted.
-[2017.08.08-07.52.36:605][258]LogModuleManager: Shutting down and abandoning module WidgetCarousel (521)
-[2017.08.08-07.52.36:605][258]LogModuleManager: Shutting down and abandoning module EditorWidgets (518)
-[2017.08.08-07.52.36:605][258]LogModuleManager: Shutting down and abandoning module CollectionManager (516)
-[2017.08.08-07.52.36:605][258]LogDirectoryWatcher: A directory notification for 'J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/Content/Collections/' was aborted.
-[2017.08.08-07.52.36:605][258]LogDirectoryWatcher: A directory notification for 'J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/Content/Developers/Administrator/Collections/' was aborted.
-[2017.08.08-07.52.36:605][258]LogDirectoryWatcher: A directory notification for 'J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/Saved/Collections/' was aborted.
-[2017.08.08-07.52.36:605][258]LogModuleManager: Shutting down and abandoning module StatsViewer (514)
-[2017.08.08-07.52.36:605][258]LogModuleManager: Shutting down and abandoning module FoliageEdit (512)
-[2017.08.08-07.52.36:605][258]LogModuleManager: Shutting down and abandoning module LandscapeEditor (510)
-[2017.08.08-07.52.36:605][258]LogModuleManager: Shutting down and abandoning module MeshPaintMode (508)
-[2017.08.08-07.52.36:605][258]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (506)
-[2017.08.08-07.52.36:605][258]LogModuleManager: Shutting down and abandoning module ActorPickerMode (504)
-[2017.08.08-07.52.36:605][258]LogModuleManager: Shutting down and abandoning module GeometryMode (502)
-[2017.08.08-07.52.36:605][258]LogModuleManager: Shutting down and abandoning module TextureAlignMode (500)
-[2017.08.08-07.52.36:605][258]LogModuleManager: Shutting down and abandoning module BspMode (498)
-[2017.08.08-07.52.36:605][258]LogModuleManager: Shutting down and abandoning module HardwareSurvey (496)
-[2017.08.08-07.52.36:605][258]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (494)
-[2017.08.08-07.52.36:605][258]LogModuleManager: Shutting down and abandoning module AutomationWorker (492)
-[2017.08.08-07.52.36:605][258]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (490)
-[2017.08.08-07.52.36:605][258]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (488)
-[2017.08.08-07.52.36:605][258]LogModuleManager: Shutting down and abandoning module PlacementMode (487)
-[2017.08.08-07.52.36:605][258]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (484)
-[2017.08.08-07.52.36:605][258]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (482)
-[2017.08.08-07.52.36:605][258]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (480)
-[2017.08.08-07.52.36:605][258]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (478)
-[2017.08.08-07.52.36:605][258]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (476)
-[2017.08.08-07.52.36:605][258]LogModuleManager: Shutting down and abandoning module Media (475)
-[2017.08.08-07.52.36:605][258]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (472)
-[2017.08.08-07.52.36:605][258]LogModuleManager: Shutting down and abandoning module CharacterAI (470)
-[2017.08.08-07.52.36:605][258]LogModuleManager: Shutting down and abandoning module AudioCapture (468)
-[2017.08.08-07.52.36:605][258]LogModuleManager: Shutting down and abandoning module SequenceRecorder (467)
-[2017.08.08-07.52.36:605][258]LogModuleManager: Shutting down and abandoning module SmartSnapping (464)
-[2017.08.08-07.52.36:605][258]LogModuleManager: Shutting down and abandoning module SessionServices (462)
-[2017.08.08-07.52.36:605][258]LogModuleManager: Shutting down and abandoning module ViewportSnapping (460)
-[2017.08.08-07.52.36:605][258]LogModuleManager: Shutting down and abandoning module ViewportInteraction (458)
-[2017.08.08-07.52.36:605][258]LogModuleManager: Shutting down and abandoning module ClothPainter (456)
-[2017.08.08-07.52.36:605][258]LogModuleManager: Shutting down and abandoning module LogVisualizer (454)
-[2017.08.08-07.52.36:605][258]LogModuleManager: Shutting down and abandoning module IntroTutorials (452)
-[2017.08.08-07.52.36:605][258]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (451)
-[2017.08.08-07.52.36:606][258]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (448)
-[2017.08.08-07.52.36:606][258]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (446)
-[2017.08.08-07.52.36:606][258]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (444)
-[2017.08.08-07.52.36:606][258]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (442)
-[2017.08.08-07.52.36:606][258]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (441)
-[2017.08.08-07.52.36:688][258]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (438)
-[2017.08.08-07.52.36:688][258]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (436)
-[2017.08.08-07.52.36:688][258]LogModuleManager: Shutting down and abandoning module InputBindingEditor (434)
-[2017.08.08-07.52.36:688][258]LogModuleManager: Shutting down and abandoning module MergeActors (432)
-[2017.08.08-07.52.36:688][258]LogModuleManager: Shutting down and abandoning module SizeMap (430)
-[2017.08.08-07.52.36:688][258]LogModuleManager: Shutting down and abandoning module TreeMap (428)
-[2017.08.08-07.52.36:688][258]LogModuleManager: Shutting down and abandoning module ReferenceViewer (426)
-[2017.08.08-07.52.36:688][258]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (424)
-[2017.08.08-07.52.36:688][258]LogModuleManager: Shutting down and abandoning module LocalizationService (423)
-[2017.08.08-07.52.36:688][258]LogModuleManager: Shutting down and abandoning module HardwareTargeting (420)
-[2017.08.08-07.52.36:688][258]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (418)
-[2017.08.08-07.52.36:688][258]LogModuleManager: Shutting down and abandoning module UndoHistory (416)
-[2017.08.08-07.52.36:688][258]LogModuleManager: Shutting down and abandoning module UserFeedback (414)
-[2017.08.08-07.52.36:688][258]LogModuleManager: Shutting down and abandoning module XmlParser (412)
-[2017.08.08-07.52.36:688][258]LogModuleManager: Shutting down and abandoning module Blutility (410)
-[2017.08.08-07.52.36:688][258]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (408)
-[2017.08.08-07.52.36:688][258]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (407)
-[2017.08.08-07.52.36:688][258]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (404)
-[2017.08.08-07.52.36:689][258]LogModuleManager: Shutting down and abandoning module SettingsEditor (402)
-[2017.08.08-07.52.36:689][258]LogModuleManager: Shutting down and abandoning module ProjectLauncher (400)
-[2017.08.08-07.52.36:689][258]LogModuleManager: Shutting down and abandoning module SessionFrontend (398)
-[2017.08.08-07.52.36:689][258]LogModuleManager: Shutting down and abandoning module ProfilerClient (396)
-[2017.08.08-07.52.36:689][258]LogModuleManager: Shutting down and abandoning module DeviceManager (394)
-[2017.08.08-07.52.36:689][258]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (393)
-[2017.08.08-07.52.36:744][258]LogModuleManager: Shutting down and abandoning module AutomationController (390)
-[2017.08.08-07.52.36:744][258]LogModuleManager: Shutting down and abandoning module AutomationWindow (388)
-[2017.08.08-07.52.36:744][258]LogModuleManager: Shutting down and abandoning module Layers (386)
-[2017.08.08-07.52.36:744][258]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (384)
-[2017.08.08-07.52.36:744][258]LogModuleManager: Shutting down and abandoning module DetailCustomizations (382)
-[2017.08.08-07.52.36:744][258]LogModuleManager: Shutting down and abandoning module PackagesDialog (380)
-[2017.08.08-07.52.36:744][258]LogModuleManager: Shutting down and abandoning module Persona (378)
-[2017.08.08-07.52.36:744][258]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (377)
-[2017.08.08-07.52.36:744][258]LogModuleManager: Shutting down and abandoning module AnimGraph (375)
-[2017.08.08-07.52.36:744][258]LogModuleManager: Shutting down and abandoning module Kismet (372)
-[2017.08.08-07.52.36:745][258]LogModuleManager: Shutting down and abandoning module ClassViewer (370)
-[2017.08.08-07.52.36:745][258]LogModuleManager: Shutting down and abandoning module Toolbox (368)
-[2017.08.08-07.52.36:745][258]LogModuleManager: Shutting down and abandoning module ModuleUI (366)
-[2017.08.08-07.52.36:745][258]LogModuleManager: Shutting down and abandoning module MovieSceneTools (364)
-[2017.08.08-07.52.36:745][258]LogModuleManager: Shutting down and abandoning module OutputLog (362)
-[2017.08.08-07.52.36:745][258]LogModuleManager: Shutting down and abandoning module GammaUI (360)
-[2017.08.08-07.52.36:745][258]LogModuleManager: Shutting down and abandoning module Documentation (358)
-[2017.08.08-07.52.36:745][258]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (356)
-[2017.08.08-07.52.36:745][258]LogModuleManager: Shutting down and abandoning module MovieScene (354)
-[2017.08.08-07.52.36:745][258]LogModuleManager: Shutting down and abandoning module Niagara (352)
-[2017.08.08-07.52.36:745][258]LogModuleManager: Shutting down and abandoning module NiagaraEditor (351)
-[2017.08.08-07.52.36:745][258]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (348)
-[2017.08.08-07.52.36:746][258]LogModuleManager: Shutting down and abandoning module AnalyticsET (346)
-[2017.08.08-07.52.36:746][258]LogModuleManager: Shutting down and abandoning module PortalServices (344)
-[2017.08.08-07.52.36:746][258]LogModuleManager: Shutting down and abandoning module PortalRpc (342)
-[2017.08.08-07.52.36:746][258]LogModuleManager: Shutting down and abandoning module MessagingRpc (340)
-[2017.08.08-07.52.36:746][258]LogModuleManager: Shutting down and abandoning module AIModule (338)
-[2017.08.08-07.52.36:746][258]LogModuleManager: Shutting down and abandoning module GameplayDebugger (337)
-[2017.08.08-07.52.36:746][258]LogModuleManager: Shutting down and abandoning module AITestSuite (335)
-[2017.08.08-07.52.36:746][258]LogModuleManager: Shutting down and abandoning module ProfilerService (332)
-[2017.08.08-07.52.36:774][258]LogModuleManager: Shutting down and abandoning module TaskGraph (330)
-[2017.08.08-07.52.36:774][258]LogModuleManager: Shutting down and abandoning module FOHEART (328)
-[2017.08.08-07.52.36:774][258]LogExit: Plugin For FOHEART C1 & FOHEART LEO stop.
-[2017.08.08-07.52.36:774][258]LogModuleManager: Shutting down and abandoning module SteamVRController (326)
-[2017.08.08-07.52.36:774][258]LogModuleManager: Shutting down and abandoning module SteamVR (324)
-[2017.08.08-07.52.36:774][258]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (322)
-[2017.08.08-07.52.36:774][258]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (320)
-[2017.08.08-07.52.36:774][258]LogModuleManager: Shutting down and abandoning module OculusLibrary (318)
-[2017.08.08-07.52.36:774][258]LogModuleManager: Shutting down and abandoning module OculusInput (316)
-[2017.08.08-07.52.36:774][258]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (314)
-[2017.08.08-07.52.36:774][258]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (312)
-[2017.08.08-07.52.36:774][258]LogModuleManager: Shutting down and abandoning module CableComponent (310)
-[2017.08.08-07.52.36:774][258]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (308)
-[2017.08.08-07.52.36:774][258]LogModuleManager: Shutting down and abandoning module AndroidPermission (306)
-[2017.08.08-07.52.36:774][258]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (302)
-[2017.08.08-07.52.36:774][258]LogModuleManager: Shutting down and abandoning module HTML5Networking (300)
-[2017.08.08-07.52.36:774][258]LogModuleManager: Shutting down and abandoning module AlembicImporter (298)
-[2017.08.08-07.52.36:774][258]LogModuleManager: Shutting down and abandoning module AlembicLibrary (297)
-[2017.08.08-07.52.36:774][258]LogModuleManager: Shutting down and abandoning module GeometryCache (296)
-[2017.08.08-07.52.36:774][258]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (295)
-[2017.08.08-07.52.36:774][258]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (290)
-[2017.08.08-07.52.36:774][258]LogModuleManager: Shutting down and abandoning module SuperSearch (289)
-[2017.08.08-07.52.36:774][258]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (286)
-[2017.08.08-07.52.36:774][258]LogModuleManager: Shutting down and abandoning module PluginBrowser (284)
-[2017.08.08-07.52.36:774][258]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (282)
-[2017.08.08-07.52.36:774][258]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (280)
-[2017.08.08-07.52.36:774][258]LogModuleManager: Shutting down and abandoning module DesktopPlatform (279)
-[2017.08.08-07.52.36:774][258]LogModuleManager: Shutting down and abandoning module UObjectPlugin (276)
-[2017.08.08-07.52.36:774][258]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (274)
-[2017.08.08-07.52.36:774][258]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (272)
-[2017.08.08-07.52.36:774][258]LogModuleManager: Shutting down and abandoning module GitSourceControl (270)
-[2017.08.08-07.52.36:774][258]LogModuleManager: Shutting down and abandoning module SourceControl (269)
-[2017.08.08-07.52.36:774][258]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (266)
-[2017.08.08-07.52.36:774][258]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (264)
-[2017.08.08-07.52.36:775][258]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (262)
-[2017.08.08-07.52.36:775][258]LogModuleManager: Shutting down and abandoning module Paper2DEditor (260)
-[2017.08.08-07.52.36:775][258]LogModuleManager: Shutting down and abandoning module MeshPaint (259)
-[2017.08.08-07.52.36:775][258]LogModuleManager: Shutting down and abandoning module LevelEditor (257)
-[2017.08.08-07.52.36:775][258]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (256)
-[2017.08.08-07.52.36:775][258]LogModuleManager: Shutting down and abandoning module MainFrame (254)
-[2017.08.08-07.52.36:775][258]LogModuleManager: Shutting down and abandoning module HotReload (253)
-[2017.08.08-07.52.36:775][258]LogDirectoryWatcher: A directory notification for 'J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/Binaries/Win64' was aborted.
-[2017.08.08-07.52.36:775][258]LogDirectoryWatcher: A directory notification for 'J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/Plugins/FOHEART/Binaries/Win64' was aborted.
-[2017.08.08-07.52.36:776][258]LogModuleManager: Shutting down and abandoning module FOHEARTPlugin (248)
-[2017.08.08-07.52.36:776][258]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (246)
-[2017.08.08-07.52.36:776][258]LogModuleManager: Shutting down and abandoning module PhysXVehicles (244)
-[2017.08.08-07.52.36:776][258]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (242)
-[2017.08.08-07.52.36:776][258]LogModuleManager: Shutting down and abandoning module ImmediatePhysicsEditor (240)
-[2017.08.08-07.52.36:776][258]LogModuleManager: Shutting down and abandoning module ImmediatePhysics (238)
-[2017.08.08-07.52.36:776][258]LogModuleManager: Shutting down and abandoning module UdpMessaging (236)
-[2017.08.08-07.52.36:878][258]LogModuleManager: Shutting down and abandoning module TcpMessaging (234)
-[2017.08.08-07.52.37:225][258]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (232)
-[2017.08.08-07.52.37:225][258]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (230)
-[2017.08.08-07.52.37:225][258]LogModuleManager: Shutting down and abandoning module FacialAnimation (228)
-[2017.08.08-07.52.37:225][258]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (226)
-[2017.08.08-07.52.37:226][258]LogModuleManager: Shutting down and abandoning module GraphEditor (225)
-[2017.08.08-07.52.37:226][258]LogModuleManager: Shutting down and abandoning module ContentBrowser (223)
-[2017.08.08-07.52.37:226][258]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (220)
-[2017.08.08-07.52.37:226][258]LogModuleManager: Shutting down and abandoning module Paper2D (218)
-[2017.08.08-07.52.37:226][258]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (216)
-[2017.08.08-07.52.37:226][258]LogModuleManager: Shutting down and abandoning module WmfMedia (214)
-[2017.08.08-07.52.37:227][258]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (212)
-[2017.08.08-07.52.37:227][258]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (210)
-[2017.08.08-07.52.37:227][258]LogModuleManager: Shutting down and abandoning module MediaAssets (208)
-[2017.08.08-07.52.37:227][258]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (206)
-[2017.08.08-07.52.37:227][258]LogModuleManager: Shutting down and abandoning module VREditor (204)
-[2017.08.08-07.52.37:227][258]LogModuleManager: Shutting down and abandoning module StringTableEditor (202)
-[2017.08.08-07.52.37:227][258]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (200)
-[2017.08.08-07.52.37:227][258]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (198)
-[2017.08.08-07.52.37:227][258]LogModuleManager: Shutting down and abandoning module FunctionalTesting (196)
-[2017.08.08-07.52.37:227][258]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (194)
-[2017.08.08-07.52.37:227][258]LogModuleManager: Shutting down and abandoning module UMG (192)
-[2017.08.08-07.52.37:227][258]LogModuleManager: Shutting down and abandoning module UMGEditor (191)
-[2017.08.08-07.52.37:227][258]LogModuleManager: Shutting down and abandoning module Sequencer (190)
-[2017.08.08-07.52.37:227][258]LogModuleManager: Shutting down and abandoning module AssetTools (188)
-[2017.08.08-07.52.37:227][258]LogModuleManager: Shutting down and abandoning module MessageLog (187)
-[2017.08.08-07.52.37:227][258]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (186)
-[2017.08.08-07.52.37:227][258]LogModuleManager: Shutting down and abandoning module SlateReflector (180)
-[2017.08.08-07.52.37:227][258]LogModuleManager: Shutting down and abandoning module Slate (178)
-[2017.08.08-07.52.37:227][258]LogModuleManager: Shutting down and abandoning module EditorStyle (176)
-[2017.08.08-07.52.37:229][258]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (174)
-[2017.08.08-07.52.37:229][258]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (172)
-[2017.08.08-07.52.37:229][258]LogModuleManager: Shutting down and abandoning module XAudio2 (170)
-[2017.08.08-07.52.37:229][258]LogModuleManager: Shutting down and abandoning module Networking (168)
-[2017.08.08-07.52.37:229][258]LogModuleManager: Shutting down and abandoning module Core (164)
-[2017.08.08-07.52.37:229][258]LogModuleManager: Shutting down and abandoning module AssetRegistry (162)
-[2017.08.08-07.52.37:454][258]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
-[2017.08.08-07.52.37:454][258]LogDirectoryWatcher: A directory notification for 'J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/Content/' was aborted.
-[2017.08.08-07.52.37:454][258]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
-[2017.08.08-07.52.37:454][258]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/GearVR/Content/' was aborted.
-[2017.08.08-07.52.37:454][258]LogDirectoryWatcher: A directory notification for 'J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/Plugins/FOHEART/Content/' was aborted.
-[2017.08.08-07.52.37:457][258]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (161)
-[2017.08.08-07.52.37:458][258]LogModuleManager: Shutting down and abandoning module KismetCompiler (158)
-[2017.08.08-07.52.37:458][258]LogModuleManager: Shutting down and abandoning module LevelSequence (156)
-[2017.08.08-07.52.37:458][258]LogModuleManager: Shutting down and abandoning module PhysXFormats (154)
-[2017.08.08-07.52.37:458][258]LogModuleManager: Shutting down and abandoning module MeshUtilities (152)
-[2017.08.08-07.52.37:458][258]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (151)
-[2017.08.08-07.52.37:458][258]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (149)
-[2017.08.08-07.52.37:458][258]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (147)
-[2017.08.08-07.52.37:458][258]LogModuleManager: Shutting down and abandoning module DerivedDataCache (144)
-[2017.08.08-07.52.37:577][258]LogDerivedDataCache: Shutdown
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module TargetPlatform (142)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (141)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (139)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (137)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (135)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (133)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (131)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (129)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (127)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (125)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (123)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module ImageWrapper (122)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (119)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (117)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (115)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (113)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (111)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (109)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (107)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (105)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (103)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module Messaging (101)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (99)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (97)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (95)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (93)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (91)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (89)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (87)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (85)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (83)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (81)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (79)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (77)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (75)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (73)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (71)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (69)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (67)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (65)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (63)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module InputCore (60)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module Settings (58)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module OculusRift (56)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module GearVRController (54)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module GearVR (52)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (50)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (48)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (44)
-[2017.08.08-07.52.37:577][258]LogOnline:Display: Unloading online subsystem: NULL
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module XMPP (43)
-[2017.08.08-07.52.37:577][258]LogModuleManager: Shutting down and abandoning module HTTP (41)
-[2017.08.08-07.52.37:577][258]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
-[2017.08.08-07.52.37:577][258]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B7F9C3CC2-4C40-8191-5ACE-73BFD555B456%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.16.3-3561208%2B%2B%2BUE4%2BRelease-4.16&UserID=301185fd4eda1a8468b293822368c166%7Cdc24215847b040dd85e2576323a502b9%7Cf05ebbff-214d-4d22-9199-c310179efc97&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
-[2017.08.08-07.52.37:608][258]LogModuleManager: Shutting down and abandoning module SSL (40)
-[2017.08.08-07.52.37:609][258]LogModuleManager: Shutting down and abandoning module HTTPChunkInstaller (36)
-[2017.08.08-07.52.37:609][258]LogModuleManager: Shutting down and abandoning module AnimationModifiers (34)
-[2017.08.08-07.52.37:610][258]LogModuleManager: Shutting down and abandoning module PropertyEditor (33)
-[2017.08.08-07.52.37:610][258]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
-[2017.08.08-07.52.37:610][258]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
-[2017.08.08-07.52.37:610][258]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
-[2017.08.08-07.52.37:610][258]LogModuleManager: Shutting down and abandoning module Landscape (24)
-[2017.08.08-07.52.37:610][258]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
-[2017.08.08-07.52.37:611][258]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
-[2017.08.08-07.52.37:611][258]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
-[2017.08.08-07.52.37:611][258]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
-[2017.08.08-07.52.37:611][258]LogModuleManager: Shutting down and abandoning module Renderer (14)
-[2017.08.08-07.52.37:611][258]LogModuleManager: Shutting down and abandoning module Engine (12)
-[2017.08.08-07.52.37:611][258]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
-[2017.08.08-07.52.37:611][258]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
-[2017.08.08-07.52.37:611][258]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
-[2017.08.08-07.52.37:611][258]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
-[2017.08.08-07.52.37:611][258]LogModuleManager: Shutting down and abandoning module PakFile (2)
-[2017.08.08-07.52.37:620][258]LogExit: Exiting.
-[2017.08.08-07.52.37:635][258]Log file closed, 08/08/17 15:52:37
+[2018.01.02-05.31.15:930][ 71]PIE:Error: 错误 Blueprint Runtime Error: Accessed None from function: 'ExecuteUbergraph_DemoMap' from node: 类型转换为 HeroTPP_FOHEART_AnimBlueprint in graph: EventGraph in object: DemoMap with description: Accessed None
+[2018.01.02-05.31.15:930][ 71]PIE: 信息 /Game/UEDPIE_0_DemoMap的‘在编辑器中播放’的起始时间0.314
+[2018.01.02-05.31.15:930][ 71]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/DemoMap.DemoMap:PersistentLevel' has LevelScriptBlueprint '/Game/DemoMap.DemoMap:PersistentLevel.DemoMap' with GeneratedClass '/Game/DemoMap.DemoMap_C' with ClassGeneratedBy '/Game/DemoMap.DemoMap:PersistentLevel.DemoMap'
+[2018.01.02-05.31.35:533][454]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/DemoMap.DemoMap:PersistentLevel' has LevelScriptBlueprint '/Game/DemoMap.DemoMap:PersistentLevel.DemoMap' with GeneratedClass '/Game/DemoMap.DemoMap_C' with ClassGeneratedBy '/Game/DemoMap.DemoMap:PersistentLevel.DemoMap'
+[2018.01.02-05.31.35:597][454]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/DemoMap.DemoMap:PersistentLevel' has LevelScriptBlueprint '/Game/DemoMap.DemoMap:PersistentLevel.DemoMap' with GeneratedClass '/Game/DemoMap.DemoMap_C' with ClassGeneratedBy '/Game/DemoMap.DemoMap:PersistentLevel.DemoMap'
+[2018.01.02-05.31.43:325][630]Cmd: QUIT_EDITOR
+[2018.01.02-05.31.43:845][630]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (搜狗拼音输入法).
+[2018.01.02-05.31.43:867][630]LogExit: Preparing to exit.
+[2018.01.02-05.31.45:449][630]LogExit: Editor shut down
+[2018.01.02-05.31.45:456][630]LogExit: Transaction tracking system shut down
+[2018.01.02-05.31.45:632][630]LogObj: Freed 0b from 0 cluster array pools.
+[2018.01.02-05.31.45:632][630]LogExit: Object subsystem successfully closed.
+[2018.01.02-05.31.45:660][630]LogD3D11RHI: Shutdown
+[2018.01.02-05.31.45:660][630]LogD3D11RHI: CleanupD3DDevice
+[2018.01.02-05.31.46:100][630]LogD3D11RHI: ~FD3D11DynamicRHI
+[2018.01.02-05.31.46:115][630]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (532)
+[2018.01.02-05.31.46:115][630]LogModuleManager: Shutting down and abandoning module HierarchicalLODUtilities (530)
+[2018.01.02-05.31.46:115][630]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (528)
+[2018.01.02-05.31.46:115][630]LogModuleManager: Shutting down and abandoning module CrashTracker (526)
+[2018.01.02-05.31.46:115][630]LogModuleManager: Shutting down and abandoning module SceneOutliner (524)
+[2018.01.02-05.31.46:115][630]LogModuleManager: Shutting down and abandoning module AddContentDialog (522)
+[2018.01.02-05.31.46:115][630]LogDirectoryWatcher: A directory notification for 'G:/Unreal Projects/UE_4.16/FeaturePacks/' was aborted.
+[2018.01.02-05.31.46:117][630]LogModuleManager: Shutting down and abandoning module WidgetCarousel (521)
+[2018.01.02-05.31.46:117][630]LogModuleManager: Shutting down and abandoning module EditorWidgets (518)
+[2018.01.02-05.31.46:117][630]LogModuleManager: Shutting down and abandoning module CollectionManager (516)
+[2018.01.02-05.31.46:117][630]LogDirectoryWatcher: A directory notification for 'J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/Content/Collections/' was aborted.
+[2018.01.02-05.31.46:117][630]LogDirectoryWatcher: A directory notification for 'J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/Content/Developers/Administrator/Collections/' was aborted.
+[2018.01.02-05.31.46:117][630]LogDirectoryWatcher: A directory notification for 'J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/Saved/Collections/' was aborted.
+[2018.01.02-05.31.46:117][630]LogModuleManager: Shutting down and abandoning module StatsViewer (514)
+[2018.01.02-05.31.46:117][630]LogModuleManager: Shutting down and abandoning module FoliageEdit (512)
+[2018.01.02-05.31.46:117][630]LogModuleManager: Shutting down and abandoning module LandscapeEditor (510)
+[2018.01.02-05.31.46:117][630]LogModuleManager: Shutting down and abandoning module MeshPaintMode (508)
+[2018.01.02-05.31.46:117][630]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (506)
+[2018.01.02-05.31.46:117][630]LogModuleManager: Shutting down and abandoning module ActorPickerMode (504)
+[2018.01.02-05.31.46:117][630]LogModuleManager: Shutting down and abandoning module GeometryMode (502)
+[2018.01.02-05.31.46:117][630]LogModuleManager: Shutting down and abandoning module TextureAlignMode (500)
+[2018.01.02-05.31.46:117][630]LogModuleManager: Shutting down and abandoning module BspMode (498)
+[2018.01.02-05.31.46:117][630]LogModuleManager: Shutting down and abandoning module HardwareSurvey (496)
+[2018.01.02-05.31.46:117][630]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (494)
+[2018.01.02-05.31.46:117][630]LogModuleManager: Shutting down and abandoning module AutomationWorker (492)
+[2018.01.02-05.31.46:117][630]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (490)
+[2018.01.02-05.31.46:117][630]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (488)
+[2018.01.02-05.31.46:117][630]LogModuleManager: Shutting down and abandoning module PlacementMode (487)
+[2018.01.02-05.31.46:117][630]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (484)
+[2018.01.02-05.31.46:117][630]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (482)
+[2018.01.02-05.31.46:117][630]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (480)
+[2018.01.02-05.31.46:117][630]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (478)
+[2018.01.02-05.31.46:118][630]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (476)
+[2018.01.02-05.31.46:118][630]LogModuleManager: Shutting down and abandoning module Media (475)
+[2018.01.02-05.31.46:118][630]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (472)
+[2018.01.02-05.31.46:118][630]LogModuleManager: Shutting down and abandoning module CharacterAI (470)
+[2018.01.02-05.31.46:118][630]LogModuleManager: Shutting down and abandoning module AudioCapture (468)
+[2018.01.02-05.31.46:118][630]LogModuleManager: Shutting down and abandoning module SequenceRecorder (467)
+[2018.01.02-05.31.46:118][630]LogModuleManager: Shutting down and abandoning module SmartSnapping (464)
+[2018.01.02-05.31.46:118][630]LogModuleManager: Shutting down and abandoning module SessionServices (462)
+[2018.01.02-05.31.46:118][630]LogModuleManager: Shutting down and abandoning module ViewportSnapping (460)
+[2018.01.02-05.31.46:118][630]LogModuleManager: Shutting down and abandoning module ViewportInteraction (458)
+[2018.01.02-05.31.46:118][630]LogModuleManager: Shutting down and abandoning module ClothPainter (456)
+[2018.01.02-05.31.46:118][630]LogModuleManager: Shutting down and abandoning module LogVisualizer (454)
+[2018.01.02-05.31.46:118][630]LogModuleManager: Shutting down and abandoning module IntroTutorials (452)
+[2018.01.02-05.31.46:118][630]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (451)
+[2018.01.02-05.31.46:118][630]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (448)
+[2018.01.02-05.31.46:118][630]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (446)
+[2018.01.02-05.31.46:118][630]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (444)
+[2018.01.02-05.31.46:118][630]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (442)
+[2018.01.02-05.31.46:118][630]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (441)
+[2018.01.02-05.31.46:443][630]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (438)
+[2018.01.02-05.31.46:443][630]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (436)
+[2018.01.02-05.31.46:443][630]LogModuleManager: Shutting down and abandoning module InputBindingEditor (434)
+[2018.01.02-05.31.46:443][630]LogModuleManager: Shutting down and abandoning module MergeActors (432)
+[2018.01.02-05.31.46:443][630]LogModuleManager: Shutting down and abandoning module SizeMap (430)
+[2018.01.02-05.31.46:443][630]LogModuleManager: Shutting down and abandoning module TreeMap (428)
+[2018.01.02-05.31.46:443][630]LogModuleManager: Shutting down and abandoning module ReferenceViewer (426)
+[2018.01.02-05.31.46:443][630]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (424)
+[2018.01.02-05.31.46:443][630]LogModuleManager: Shutting down and abandoning module LocalizationService (423)
+[2018.01.02-05.31.46:443][630]LogModuleManager: Shutting down and abandoning module HardwareTargeting (420)
+[2018.01.02-05.31.46:443][630]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (418)
+[2018.01.02-05.31.46:443][630]LogModuleManager: Shutting down and abandoning module UndoHistory (416)
+[2018.01.02-05.31.46:443][630]LogModuleManager: Shutting down and abandoning module UserFeedback (414)
+[2018.01.02-05.31.46:443][630]LogModuleManager: Shutting down and abandoning module XmlParser (412)
+[2018.01.02-05.31.46:443][630]LogModuleManager: Shutting down and abandoning module Blutility (410)
+[2018.01.02-05.31.46:443][630]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (408)
+[2018.01.02-05.31.46:444][630]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (407)
+[2018.01.02-05.31.46:444][630]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (404)
+[2018.01.02-05.31.46:444][630]LogModuleManager: Shutting down and abandoning module SettingsEditor (402)
+[2018.01.02-05.31.46:444][630]LogModuleManager: Shutting down and abandoning module ProjectLauncher (400)
+[2018.01.02-05.31.46:444][630]LogModuleManager: Shutting down and abandoning module SessionFrontend (398)
+[2018.01.02-05.31.46:444][630]LogModuleManager: Shutting down and abandoning module ProfilerClient (396)
+[2018.01.02-05.31.46:444][630]LogModuleManager: Shutting down and abandoning module DeviceManager (394)
+[2018.01.02-05.31.46:444][630]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (393)
+[2018.01.02-05.31.46:499][630]LogModuleManager: Shutting down and abandoning module AutomationController (390)
+[2018.01.02-05.31.46:499][630]LogModuleManager: Shutting down and abandoning module AutomationWindow (388)
+[2018.01.02-05.31.46:499][630]LogModuleManager: Shutting down and abandoning module Layers (386)
+[2018.01.02-05.31.46:499][630]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (384)
+[2018.01.02-05.31.46:499][630]LogModuleManager: Shutting down and abandoning module DetailCustomizations (382)
+[2018.01.02-05.31.46:499][630]LogModuleManager: Shutting down and abandoning module PackagesDialog (380)
+[2018.01.02-05.31.46:499][630]LogModuleManager: Shutting down and abandoning module Persona (378)
+[2018.01.02-05.31.46:499][630]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (377)
+[2018.01.02-05.31.46:499][630]LogModuleManager: Shutting down and abandoning module AnimGraph (375)
+[2018.01.02-05.31.46:499][630]LogModuleManager: Shutting down and abandoning module Kismet (372)
+[2018.01.02-05.31.46:500][630]LogModuleManager: Shutting down and abandoning module ClassViewer (370)
+[2018.01.02-05.31.46:500][630]LogModuleManager: Shutting down and abandoning module Toolbox (368)
+[2018.01.02-05.31.46:500][630]LogModuleManager: Shutting down and abandoning module ModuleUI (366)
+[2018.01.02-05.31.46:500][630]LogModuleManager: Shutting down and abandoning module MovieSceneTools (364)
+[2018.01.02-05.31.46:500][630]LogModuleManager: Shutting down and abandoning module OutputLog (362)
+[2018.01.02-05.31.46:500][630]LogModuleManager: Shutting down and abandoning module GammaUI (360)
+[2018.01.02-05.31.46:500][630]LogModuleManager: Shutting down and abandoning module Documentation (358)
+[2018.01.02-05.31.46:500][630]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (356)
+[2018.01.02-05.31.46:500][630]LogModuleManager: Shutting down and abandoning module MovieScene (354)
+[2018.01.02-05.31.46:500][630]LogModuleManager: Shutting down and abandoning module Niagara (352)
+[2018.01.02-05.31.46:500][630]LogModuleManager: Shutting down and abandoning module NiagaraEditor (351)
+[2018.01.02-05.31.46:500][630]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (348)
+[2018.01.02-05.31.46:500][630]LogModuleManager: Shutting down and abandoning module AnalyticsET (346)
+[2018.01.02-05.31.46:500][630]LogModuleManager: Shutting down and abandoning module PortalServices (344)
+[2018.01.02-05.31.46:500][630]LogModuleManager: Shutting down and abandoning module PortalRpc (342)
+[2018.01.02-05.31.46:500][630]LogModuleManager: Shutting down and abandoning module MessagingRpc (340)
+[2018.01.02-05.31.46:500][630]LogModuleManager: Shutting down and abandoning module AIModule (338)
+[2018.01.02-05.31.46:500][630]LogModuleManager: Shutting down and abandoning module GameplayDebugger (337)
+[2018.01.02-05.31.46:500][630]LogModuleManager: Shutting down and abandoning module AITestSuite (335)
+[2018.01.02-05.31.46:500][630]LogModuleManager: Shutting down and abandoning module ProfilerService (332)
+[2018.01.02-05.31.46:547][630]LogModuleManager: Shutting down and abandoning module TaskGraph (330)
+[2018.01.02-05.31.46:547][630]LogModuleManager: Shutting down and abandoning module FOHEART (328)
+[2018.01.02-05.31.46:547][630]LogExit: Plugin For FOHEART C1 & FOHEART LEO stop.
+[2018.01.02-05.31.46:547][630]LogModuleManager: Shutting down and abandoning module SteamVRController (326)
+[2018.01.02-05.31.46:547][630]LogModuleManager: Shutting down and abandoning module SteamVR (324)
+[2018.01.02-05.31.46:547][630]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (322)
+[2018.01.02-05.31.46:547][630]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (320)
+[2018.01.02-05.31.46:547][630]LogModuleManager: Shutting down and abandoning module OculusLibrary (318)
+[2018.01.02-05.31.46:547][630]LogModuleManager: Shutting down and abandoning module OculusInput (316)
+[2018.01.02-05.31.46:547][630]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (314)
+[2018.01.02-05.31.46:547][630]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (312)
+[2018.01.02-05.31.46:547][630]LogModuleManager: Shutting down and abandoning module CableComponent (310)
+[2018.01.02-05.31.46:547][630]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (308)
+[2018.01.02-05.31.46:547][630]LogModuleManager: Shutting down and abandoning module AndroidPermission (306)
+[2018.01.02-05.31.46:547][630]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (302)
+[2018.01.02-05.31.46:547][630]LogModuleManager: Shutting down and abandoning module HTML5Networking (300)
+[2018.01.02-05.31.46:547][630]LogModuleManager: Shutting down and abandoning module AlembicImporter (298)
+[2018.01.02-05.31.46:547][630]LogModuleManager: Shutting down and abandoning module AlembicLibrary (297)
+[2018.01.02-05.31.46:547][630]LogModuleManager: Shutting down and abandoning module GeometryCache (296)
+[2018.01.02-05.31.46:547][630]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (295)
+[2018.01.02-05.31.46:547][630]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (290)
+[2018.01.02-05.31.46:547][630]LogModuleManager: Shutting down and abandoning module SuperSearch (289)
+[2018.01.02-05.31.46:547][630]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (286)
+[2018.01.02-05.31.46:547][630]LogModuleManager: Shutting down and abandoning module PluginBrowser (284)
+[2018.01.02-05.31.46:547][630]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (282)
+[2018.01.02-05.31.46:547][630]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (280)
+[2018.01.02-05.31.46:548][630]LogModuleManager: Shutting down and abandoning module UObjectPlugin (278)
+[2018.01.02-05.31.46:548][630]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (276)
+[2018.01.02-05.31.46:548][630]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (274)
+[2018.01.02-05.31.46:548][630]LogModuleManager: Shutting down and abandoning module GitSourceControl (272)
+[2018.01.02-05.31.46:548][630]LogModuleManager: Shutting down and abandoning module SourceControl (271)
+[2018.01.02-05.31.46:548][630]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (268)
+[2018.01.02-05.31.46:548][630]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (266)
+[2018.01.02-05.31.46:548][630]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (264)
+[2018.01.02-05.31.46:548][630]LogModuleManager: Shutting down and abandoning module Paper2DEditor (262)
+[2018.01.02-05.31.46:548][630]LogModuleManager: Shutting down and abandoning module MeshPaint (261)
+[2018.01.02-05.31.46:548][630]LogModuleManager: Shutting down and abandoning module LevelEditor (259)
+[2018.01.02-05.31.46:548][630]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (258)
+[2018.01.02-05.31.46:548][630]LogModuleManager: Shutting down and abandoning module MainFrame (256)
+[2018.01.02-05.31.46:548][630]LogModuleManager: Shutting down and abandoning module HotReload (255)
+[2018.01.02-05.31.46:548][630]LogDirectoryWatcher: A directory notification for 'J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/Binaries/Win64' was aborted.
+[2018.01.02-05.31.46:548][630]LogDirectoryWatcher: A directory notification for 'J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/Plugins/FOHEART/Binaries/Win64' was aborted.
+[2018.01.02-05.31.46:549][630]LogModuleManager: Shutting down and abandoning module FOHEARTPlugin (250)
+[2018.01.02-05.31.46:549][630]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (248)
+[2018.01.02-05.31.46:549][630]LogModuleManager: Shutting down and abandoning module PhysXVehicles (246)
+[2018.01.02-05.31.46:549][630]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (244)
+[2018.01.02-05.31.46:549][630]LogModuleManager: Shutting down and abandoning module ImmediatePhysicsEditor (242)
+[2018.01.02-05.31.46:549][630]LogModuleManager: Shutting down and abandoning module ImmediatePhysics (240)
+[2018.01.02-05.31.46:549][630]LogModuleManager: Shutting down and abandoning module UdpMessaging (238)
+[2018.01.02-05.31.46:650][630]LogModuleManager: Shutting down and abandoning module TcpMessaging (236)
+[2018.01.02-05.31.46:750][630]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (234)
+[2018.01.02-05.31.46:750][630]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (232)
+[2018.01.02-05.31.46:750][630]LogModuleManager: Shutting down and abandoning module FacialAnimation (230)
+[2018.01.02-05.31.46:750][630]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (228)
+[2018.01.02-05.31.46:750][630]LogModuleManager: Shutting down and abandoning module GraphEditor (227)
+[2018.01.02-05.31.46:750][630]LogModuleManager: Shutting down and abandoning module ContentBrowser (225)
+[2018.01.02-05.31.46:751][630]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (222)
+[2018.01.02-05.31.46:751][630]LogModuleManager: Shutting down and abandoning module Paper2D (220)
+[2018.01.02-05.31.46:751][630]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (218)
+[2018.01.02-05.31.46:751][630]LogModuleManager: Shutting down and abandoning module WmfMedia (216)
+[2018.01.02-05.31.46:757][630]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (214)
+[2018.01.02-05.31.46:757][630]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (212)
+[2018.01.02-05.31.46:757][630]LogModuleManager: Shutting down and abandoning module MediaAssets (210)
+[2018.01.02-05.31.46:757][630]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (208)
+[2018.01.02-05.31.46:758][630]LogModuleManager: Shutting down and abandoning module VREditor (206)
+[2018.01.02-05.31.46:758][630]LogModuleManager: Shutting down and abandoning module StringTableEditor (204)
+[2018.01.02-05.31.46:758][630]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (202)
+[2018.01.02-05.31.46:758][630]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (200)
+[2018.01.02-05.31.46:758][630]LogModuleManager: Shutting down and abandoning module FunctionalTesting (198)
+[2018.01.02-05.31.46:758][630]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (196)
+[2018.01.02-05.31.46:758][630]LogModuleManager: Shutting down and abandoning module UMG (194)
+[2018.01.02-05.31.46:758][630]LogModuleManager: Shutting down and abandoning module UMGEditor (193)
+[2018.01.02-05.31.46:758][630]LogModuleManager: Shutting down and abandoning module Sequencer (192)
+[2018.01.02-05.31.46:758][630]LogModuleManager: Shutting down and abandoning module AssetTools (190)
+[2018.01.02-05.31.46:758][630]LogModuleManager: Shutting down and abandoning module MessageLog (189)
+[2018.01.02-05.31.46:758][630]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (188)
+[2018.01.02-05.31.46:758][630]LogModuleManager: Shutting down and abandoning module SlateReflector (182)
+[2018.01.02-05.31.46:758][630]LogModuleManager: Shutting down and abandoning module Slate (180)
+[2018.01.02-05.31.46:758][630]LogModuleManager: Shutting down and abandoning module EditorStyle (178)
+[2018.01.02-05.31.46:760][630]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (176)
+[2018.01.02-05.31.46:760][630]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (174)
+[2018.01.02-05.31.46:760][630]LogModuleManager: Shutting down and abandoning module XAudio2 (172)
+[2018.01.02-05.31.46:760][630]LogModuleManager: Shutting down and abandoning module Networking (170)
+[2018.01.02-05.31.46:760][630]LogModuleManager: Shutting down and abandoning module Core (166)
+[2018.01.02-05.31.46:760][630]LogModuleManager: Shutting down and abandoning module AssetRegistry (164)
+[2018.01.02-05.31.46:886][630]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2018.01.02-05.31.46:886][630]LogDirectoryWatcher: A directory notification for 'J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/Content/' was aborted.
+[2018.01.02-05.31.46:886][630]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2018.01.02-05.31.46:886][630]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/GearVR/Content/' was aborted.
+[2018.01.02-05.31.46:886][630]LogDirectoryWatcher: A directory notification for 'J:/UEPluginDemo/FOHEART_UE4_Plugin_Demo/Plugins/FOHEART/Content/' was aborted.
+[2018.01.02-05.31.46:888][630]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (163)
+[2018.01.02-05.31.46:889][630]LogModuleManager: Shutting down and abandoning module KismetCompiler (160)
+[2018.01.02-05.31.46:889][630]LogModuleManager: Shutting down and abandoning module LevelSequence (158)
+[2018.01.02-05.31.46:889][630]LogModuleManager: Shutting down and abandoning module PhysXFormats (156)
+[2018.01.02-05.31.46:889][630]LogModuleManager: Shutting down and abandoning module MeshUtilities (154)
+[2018.01.02-05.31.46:889][630]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (153)
+[2018.01.02-05.31.46:889][630]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (151)
+[2018.01.02-05.31.46:889][630]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (149)
+[2018.01.02-05.31.46:889][630]LogModuleManager: Shutting down and abandoning module DerivedDataCache (146)
+[2018.01.02-05.31.46:965][630]LogDerivedDataCache: Shutdown
+[2018.01.02-05.31.46:965][630]LogModuleManager: Shutting down and abandoning module TargetPlatform (144)
+[2018.01.02-05.31.46:965][630]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (143)
+[2018.01.02-05.31.46:965][630]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (141)
+[2018.01.02-05.31.46:965][630]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (139)
+[2018.01.02-05.31.46:965][630]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (137)
+[2018.01.02-05.31.46:965][630]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (135)
+[2018.01.02-05.31.46:965][630]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (133)
+[2018.01.02-05.31.46:965][630]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (131)
+[2018.01.02-05.31.46:965][630]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (129)
+[2018.01.02-05.31.46:965][630]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (127)
+[2018.01.02-05.31.46:965][630]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (125)
+[2018.01.02-05.31.46:965][630]LogModuleManager: Shutting down and abandoning module ImageWrapper (124)
+[2018.01.02-05.31.46:965][630]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (121)
+[2018.01.02-05.31.46:965][630]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (119)
+[2018.01.02-05.31.46:965][630]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (117)
+[2018.01.02-05.31.46:965][630]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (115)
+[2018.01.02-05.31.46:965][630]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (113)
+[2018.01.02-05.31.46:965][630]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (111)
+[2018.01.02-05.31.46:965][630]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (109)
+[2018.01.02-05.31.46:965][630]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (107)
+[2018.01.02-05.31.46:965][630]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (105)
+[2018.01.02-05.31.46:965][630]LogModuleManager: Shutting down and abandoning module Messaging (103)
+[2018.01.02-05.31.46:965][630]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (101)
+[2018.01.02-05.31.46:965][630]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (99)
+[2018.01.02-05.31.46:965][630]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (97)
+[2018.01.02-05.31.46:965][630]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (95)
+[2018.01.02-05.31.46:965][630]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (93)
+[2018.01.02-05.31.46:966][630]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (91)
+[2018.01.02-05.31.46:966][630]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (89)
+[2018.01.02-05.31.46:966][630]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (87)
+[2018.01.02-05.31.46:966][630]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (85)
+[2018.01.02-05.31.46:966][630]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (83)
+[2018.01.02-05.31.46:966][630]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (81)
+[2018.01.02-05.31.46:966][630]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (79)
+[2018.01.02-05.31.46:966][630]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (77)
+[2018.01.02-05.31.46:966][630]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (75)
+[2018.01.02-05.31.46:966][630]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (73)
+[2018.01.02-05.31.46:966][630]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (71)
+[2018.01.02-05.31.46:966][630]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (69)
+[2018.01.02-05.31.46:966][630]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (67)
+[2018.01.02-05.31.46:966][630]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (65)
+[2018.01.02-05.31.46:966][630]LogModuleManager: Shutting down and abandoning module InputCore (62)
+[2018.01.02-05.31.46:966][630]LogModuleManager: Shutting down and abandoning module Settings (60)
+[2018.01.02-05.31.46:966][630]LogModuleManager: Shutting down and abandoning module OculusRift (58)
+[2018.01.02-05.31.46:966][630]LogModuleManager: Shutting down and abandoning module GearVRController (56)
+[2018.01.02-05.31.46:966][630]LogModuleManager: Shutting down and abandoning module GearVR (54)
+[2018.01.02-05.31.46:966][630]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (52)
+[2018.01.02-05.31.46:966][630]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (50)
+[2018.01.02-05.31.46:966][630]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (46)
+[2018.01.02-05.31.46:966][630]LogOnline:Display: Unloading online subsystem: NULL
+[2018.01.02-05.31.46:966][630]LogModuleManager: Shutting down and abandoning module XMPP (45)
+[2018.01.02-05.31.46:966][630]LogModuleManager: Shutting down and abandoning module HTTP (43)
+[2018.01.02-05.31.46:966][630]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2018.01.02-05.31.46:966][630]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B354DEA79-42EB-B4F8-7C3E-CBA112315D89%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.16.3-3561208%2B%2B%2BUE4%2BRelease-4.16&UserID=301185fd4eda1a8468b293822368c166%7Cdc24215847b040dd85e2576323a502b9%7Cf05ebbff-214d-4d22-9199-c310179efc97&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2018.01.02-05.31.46:972][630]LogModuleManager: Shutting down and abandoning module SSL (42)
+[2018.01.02-05.31.46:973][630]LogModuleManager: Shutting down and abandoning module HTTPChunkInstaller (38)
+[2018.01.02-05.31.46:973][630]LogModuleManager: Shutting down and abandoning module DesktopPlatform (36)
+[2018.01.02-05.31.46:973][630]LogModuleManager: Shutting down and abandoning module AnimationModifiers (34)
+[2018.01.02-05.31.46:973][630]LogModuleManager: Shutting down and abandoning module PropertyEditor (33)
+[2018.01.02-05.31.46:973][630]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
+[2018.01.02-05.31.46:973][630]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
+[2018.01.02-05.31.46:973][630]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
+[2018.01.02-05.31.46:973][630]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2018.01.02-05.31.46:973][630]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2018.01.02-05.31.46:975][630]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
+[2018.01.02-05.31.46:975][630]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
+[2018.01.02-05.31.46:975][630]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
+[2018.01.02-05.31.46:975][630]LogModuleManager: Shutting down and abandoning module Renderer (14)
+[2018.01.02-05.31.46:975][630]LogModuleManager: Shutting down and abandoning module Engine (12)
+[2018.01.02-05.31.46:975][630]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
+[2018.01.02-05.31.46:975][630]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
+[2018.01.02-05.31.46:975][630]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2018.01.02-05.31.46:975][630]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2018.01.02-05.31.46:975][630]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2018.01.02-05.31.46:977][630]LogExit: Exiting.
+[2018.01.02-05.31.46:990][630]Log file closed, 01/02/18 13:31:46

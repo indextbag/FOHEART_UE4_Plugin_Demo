@@ -22,17 +22,17 @@ enum class EFOHEARTChannelNumberEnum : uint8;
 #endif
 #define FOHEART_FOHEARTBPLibrary_generated_h
 
-#define FOHEARTPlugin_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_123_GENERATED_BODY \
+#define FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_123_GENERATED_BODY \
 	friend FOHEART_API class UScriptStruct* Z_Construct_UScriptStruct_FFOHEART_LEOBoneMapStruct(); \
 	FOHEART_API static class UScriptStruct* StaticStruct();
 
 
-#define FOHEARTPlugin_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_113_GENERATED_BODY \
+#define FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_113_GENERATED_BODY \
 	friend FOHEART_API class UScriptStruct* Z_Construct_UScriptStruct_FFOHEART_C1BoneMapStruct(); \
 	FOHEART_API static class UScriptStruct* StaticStruct();
 
 
-#define FOHEARTPlugin_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_RPC_WRAPPERS \
+#define FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execFOHEART_C1GetBVHBoneIndex) \
 	{ \
@@ -231,7 +231,7 @@ enum class EFOHEARTChannelNumberEnum : uint8;
 	}
 
 
-#define FOHEARTPlugin_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execFOHEART_C1GetBVHBoneIndex) \
 	{ \
@@ -430,7 +430,7 @@ enum class EFOHEARTChannelNumberEnum : uint8;
 	}
 
 
-#define FOHEARTPlugin_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_INCLASS_NO_PURE_DECLS \
+#define FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFOHEART_C1BPLibrary(); \
 	friend FOHEART_API class UClass* Z_Construct_UClass_UFOHEART_C1BPLibrary(); \
@@ -440,7 +440,7 @@ public: \
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define FOHEARTPlugin_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_INCLASS \
+#define FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_INCLASS \
 private: \
 	static void StaticRegisterNativesUFOHEART_C1BPLibrary(); \
 	friend FOHEART_API class UClass* Z_Construct_UClass_UFOHEART_C1BPLibrary(); \
@@ -450,7 +450,7 @@ public: \
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define FOHEARTPlugin_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_STANDARD_CONSTRUCTORS \
+#define FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFOHEART_C1BPLibrary(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFOHEART_C1BPLibrary) \
@@ -463,7 +463,7 @@ private: \
 public:
 
 
-#define FOHEARTPlugin_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_ENHANCED_CONSTRUCTORS \
+#define FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFOHEART_C1BPLibrary(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -476,32 +476,32 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFOHEART_C1BPLibrary); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFOHEART_C1BPLibrary)
 
 
-#define FOHEARTPlugin_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_PRIVATE_PROPERTY_OFFSET
-#define FOHEARTPlugin_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_130_PROLOG
-#define FOHEARTPlugin_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_GENERATED_BODY_LEGACY \
+#define FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_PRIVATE_PROPERTY_OFFSET
+#define FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_130_PROLOG
+#define FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FOHEARTPlugin_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_PRIVATE_PROPERTY_OFFSET \
-	FOHEARTPlugin_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_RPC_WRAPPERS \
-	FOHEARTPlugin_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_INCLASS \
-	FOHEARTPlugin_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_STANDARD_CONSTRUCTORS \
+	FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_PRIVATE_PROPERTY_OFFSET \
+	FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_RPC_WRAPPERS \
+	FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_INCLASS \
+	FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FOHEARTPlugin_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_GENERATED_BODY \
+#define FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FOHEARTPlugin_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_PRIVATE_PROPERTY_OFFSET \
-	FOHEARTPlugin_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_RPC_WRAPPERS_NO_PURE_DECLS \
-	FOHEARTPlugin_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_INCLASS_NO_PURE_DECLS \
-	FOHEARTPlugin_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_ENHANCED_CONSTRUCTORS \
+	FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_PRIVATE_PROPERTY_OFFSET \
+	FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_RPC_WRAPPERS_NO_PURE_DECLS \
+	FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_INCLASS_NO_PURE_DECLS \
+	FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_ENHANCED_CONSTRUCTORS \
 static_assert(false, "Unknown access specifier for GENERATED_BODY() macro in class FOHEART_C1BPLibrary."); \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FOHEARTPlugin_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h
+#define CURRENT_FILE_ID FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h
 
 
 #define FOREACH_ENUM_EFOHEART_C1BONESENUM(op) \
