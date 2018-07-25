@@ -15,6 +15,7 @@
 // Supported motion line formats
 enum MotionLineFormatEnum { Standard, FOHEART_C1, FOHEART_LEO };
 
+
 UCLASS()
 class AFOHEARTController : public AActor
 {
@@ -70,6 +71,8 @@ public:
 	bool Pause(bool bPause);
 	bool Rewind();
 
+	bool GetFloatBuffer(FString ActorName, float* pFloatData);
+
 private:
 	float FrameTime = 0;
 	float DeltaTimeAdded = 0;
@@ -91,4 +94,6 @@ private:
 	uint64_t frameNum;
 	uint64_t sendTimeStamp;
 	uint32_t sendFreq;
+
+	FCriticalSection Mutex;
 };

@@ -13,11 +13,6 @@ Official Unreal Engine 4 Plugin Demo for FOHEART C1 Motion Capture Suits
 本手册介绍如何使用FOHEART C1驱动虚拟人物运动，在这里我们使用蓝图实现。<br>
 该项目的主分支为兼容Unreal引擎的最新稳定版，其它分支为较低版本的最后一个稳定版本。
 # 一、下载并打开工程
-选择与您使用的虚幻编辑器相同的版本分支，并下载到本地硬盘。<br>
-
-<div align=center>
-<img src="https://raw.githubusercontent.com/FOHEART/FOHEART_UE4_Plugin_Demo/master/help/img/versionselect.png"/>
-</div>
 
 <div align=center>
 <img src="https://raw.githubusercontent.com/FOHEART/FOHEART_UE4_Plugin_Demo/master/help/img/selectmap.png"/>

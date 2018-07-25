@@ -14,6 +14,7 @@ class USkeletalMeshComponent;
 struct FVector;
 class AFOHEARTController;
 struct FFOHEART_C1BoneMapStruct;
+struct FFOHEART_BoneAxisMatch;
 enum class EFOHEARTMotionLineFormatEnum : uint8;
 enum class EFOHEARTRotOrderEnum : uint8;
 enum class EFOHEARTChannelNumberEnum : uint8;
@@ -22,17 +23,22 @@ enum class EFOHEARTChannelNumberEnum : uint8;
 #endif
 #define FOHEART_FOHEARTBPLibrary_generated_h
 
-#define FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_123_GENERATED_BODY \
+#define FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_173_GENERATED_BODY \
 	friend FOHEART_API class UScriptStruct* Z_Construct_UScriptStruct_FFOHEART_LEOBoneMapStruct(); \
 	FOHEART_API static class UScriptStruct* StaticStruct();
 
 
-#define FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_113_GENERATED_BODY \
+#define FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_147_GENERATED_BODY \
 	friend FOHEART_API class UScriptStruct* Z_Construct_UScriptStruct_FFOHEART_C1BoneMapStruct(); \
 	FOHEART_API static class UScriptStruct* StaticStruct();
 
 
-#define FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_RPC_WRAPPERS \
+#define FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_124_GENERATED_BODY \
+	friend FOHEART_API class UScriptStruct* Z_Construct_UScriptStruct_FFOHEART_BoneAxisMatch(); \
+	FOHEART_API static class UScriptStruct* StaticStruct();
+
+
+#define FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_183_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execFOHEART_C1GetBVHBoneIndex) \
 	{ \
@@ -113,10 +119,13 @@ enum class EFOHEARTChannelNumberEnum : uint8;
 		P_GET_STRUCT(FRotator,Z_Param_AdditionalRotation); \
 		P_GET_ENUM(EFOHEART_C1BonesEnum,Z_Param_BVHBone); \
 		P_GET_PROPERTY(UNameProperty,Z_Param_CustomBoneName); \
+		P_GET_STRUCT(FFOHEART_BoneAxisMatch,Z_Param_MatchAxis_X); \
+		P_GET_STRUCT(FFOHEART_BoneAxisMatch,Z_Param_MatchAxis_Y); \
+		P_GET_STRUCT(FFOHEART_BoneAxisMatch,Z_Param_MatchAxis_Z); \
 		P_GET_UBOOL(Z_Param_InverseForward); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=UFOHEART_C1BPLibrary::FOHEART_C1Read(Z_Param_Controller,Z_Param_ActorName,Z_Param_Mesh,Z_Param_Out_Translation,Z_Param_Out_Rotation,Z_Param_AdditionalTranslation,Z_Param_AdditionalRotation,EFOHEART_C1BonesEnum(Z_Param_BVHBone),Z_Param_CustomBoneName,Z_Param_InverseForward); \
+		*(bool*)Z_Param__Result=UFOHEART_C1BPLibrary::FOHEART_C1Read(Z_Param_Controller,Z_Param_ActorName,Z_Param_Mesh,Z_Param_Out_Translation,Z_Param_Out_Rotation,Z_Param_AdditionalTranslation,Z_Param_AdditionalRotation,EFOHEART_C1BonesEnum(Z_Param_BVHBone),Z_Param_CustomBoneName,Z_Param_MatchAxis_X,Z_Param_MatchAxis_Y,Z_Param_MatchAxis_Z,Z_Param_InverseForward); \
 		P_NATIVE_END; \
 	} \
  \
@@ -231,7 +240,7 @@ enum class EFOHEARTChannelNumberEnum : uint8;
 	}
 
 
-#define FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_183_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execFOHEART_C1GetBVHBoneIndex) \
 	{ \
@@ -312,10 +321,13 @@ enum class EFOHEARTChannelNumberEnum : uint8;
 		P_GET_STRUCT(FRotator,Z_Param_AdditionalRotation); \
 		P_GET_ENUM(EFOHEART_C1BonesEnum,Z_Param_BVHBone); \
 		P_GET_PROPERTY(UNameProperty,Z_Param_CustomBoneName); \
+		P_GET_STRUCT(FFOHEART_BoneAxisMatch,Z_Param_MatchAxis_X); \
+		P_GET_STRUCT(FFOHEART_BoneAxisMatch,Z_Param_MatchAxis_Y); \
+		P_GET_STRUCT(FFOHEART_BoneAxisMatch,Z_Param_MatchAxis_Z); \
 		P_GET_UBOOL(Z_Param_InverseForward); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=UFOHEART_C1BPLibrary::FOHEART_C1Read(Z_Param_Controller,Z_Param_ActorName,Z_Param_Mesh,Z_Param_Out_Translation,Z_Param_Out_Rotation,Z_Param_AdditionalTranslation,Z_Param_AdditionalRotation,EFOHEART_C1BonesEnum(Z_Param_BVHBone),Z_Param_CustomBoneName,Z_Param_InverseForward); \
+		*(bool*)Z_Param__Result=UFOHEART_C1BPLibrary::FOHEART_C1Read(Z_Param_Controller,Z_Param_ActorName,Z_Param_Mesh,Z_Param_Out_Translation,Z_Param_Out_Rotation,Z_Param_AdditionalTranslation,Z_Param_AdditionalRotation,EFOHEART_C1BonesEnum(Z_Param_BVHBone),Z_Param_CustomBoneName,Z_Param_MatchAxis_X,Z_Param_MatchAxis_Y,Z_Param_MatchAxis_Z,Z_Param_InverseForward); \
 		P_NATIVE_END; \
 	} \
  \
@@ -430,7 +442,7 @@ enum class EFOHEARTChannelNumberEnum : uint8;
 	}
 
 
-#define FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_INCLASS_NO_PURE_DECLS \
+#define FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_183_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFOHEART_C1BPLibrary(); \
 	friend FOHEART_API class UClass* Z_Construct_UClass_UFOHEART_C1BPLibrary(); \
@@ -440,7 +452,7 @@ public: \
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_INCLASS \
+#define FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_183_INCLASS \
 private: \
 	static void StaticRegisterNativesUFOHEART_C1BPLibrary(); \
 	friend FOHEART_API class UClass* Z_Construct_UClass_UFOHEART_C1BPLibrary(); \
@@ -450,7 +462,7 @@ public: \
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_STANDARD_CONSTRUCTORS \
+#define FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_183_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFOHEART_C1BPLibrary(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFOHEART_C1BPLibrary) \
@@ -463,7 +475,7 @@ private: \
 public:
 
 
-#define FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_ENHANCED_CONSTRUCTORS \
+#define FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_183_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFOHEART_C1BPLibrary(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -476,26 +488,26 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFOHEART_C1BPLibrary); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFOHEART_C1BPLibrary)
 
 
-#define FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_PRIVATE_PROPERTY_OFFSET
-#define FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_130_PROLOG
-#define FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_GENERATED_BODY_LEGACY \
+#define FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_183_PRIVATE_PROPERTY_OFFSET
+#define FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_180_PROLOG
+#define FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_183_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_PRIVATE_PROPERTY_OFFSET \
-	FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_RPC_WRAPPERS \
-	FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_INCLASS \
-	FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_STANDARD_CONSTRUCTORS \
+	FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_183_PRIVATE_PROPERTY_OFFSET \
+	FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_183_RPC_WRAPPERS \
+	FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_183_INCLASS \
+	FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_183_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_GENERATED_BODY \
+#define FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_183_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_PRIVATE_PROPERTY_OFFSET \
-	FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_RPC_WRAPPERS_NO_PURE_DECLS \
-	FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_INCLASS_NO_PURE_DECLS \
-	FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_133_ENHANCED_CONSTRUCTORS \
+	FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_183_PRIVATE_PROPERTY_OFFSET \
+	FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_183_RPC_WRAPPERS_NO_PURE_DECLS \
+	FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_183_INCLASS_NO_PURE_DECLS \
+	FOHEART_UE4_Plugin_Demo_Plugins_FOHEART_Source_FOHEART_Public_FOHEARTBPLibrary_h_183_ENHANCED_CONSTRUCTORS \
 static_assert(false, "Unknown access specifier for GENERATED_BODY() macro in class FOHEART_C1BPLibrary."); \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -507,9 +519,9 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #define FOREACH_ENUM_EFOHEART_C1BONESENUM(op) \
 	op(EFOHEART_C1BonesEnum::VE_Hips) \
 	op(EFOHEART_C1BonesEnum::VE_Spine) \
-	op(EFOHEART_C1BonesEnum::VE_Spine1) \
 	op(EFOHEART_C1BonesEnum::VE_Spine2) \
 	op(EFOHEART_C1BonesEnum::VE_Spine3) \
+	op(EFOHEART_C1BonesEnum::VE_Spine4) \
 	op(EFOHEART_C1BonesEnum::VE_Neck) \
 	op(EFOHEART_C1BonesEnum::VE_Head) \
 	op(EFOHEART_C1BonesEnum::VE_RightShoulder) \
@@ -527,6 +539,12 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	op(EFOHEART_C1BonesEnum::VE_LeftUpLeg) \
 	op(EFOHEART_C1BonesEnum::VE_LeftLeg) \
 	op(EFOHEART_C1BonesEnum::VE_LeftFoot) 
+#define FOREACH_ENUM_EFOHEARTBONEAXISENUM(op) \
+	op(EFOHEARTBoneAxisEnum::VE_Axis_X) \
+	op(EFOHEARTBoneAxisEnum::VE_Axis_iX) \
+	op(EFOHEARTBoneAxisEnum::VE_Axis_Y) \
+	op(EFOHEARTBoneAxisEnum::VE_Axis_iY) \
+	op(EFOHEARTBoneAxisEnum::VE_Axis_Z) 
 #define FOREACH_ENUM_EFOHEARTCHANNELNUMBERENUM(op) \
 	op(EFOHEARTChannelNumberEnum::VE_0) \
 	op(EFOHEARTChannelNumberEnum::VE_1) \

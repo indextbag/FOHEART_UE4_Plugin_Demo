@@ -24,9 +24,9 @@
 /wd4838
 /w44668
 /I "G:\Unreal Projects\UE_4.18\Engine\Source"
-/I J:\UEPluginDemo\FOHEART_UE4_Plugin_Demo\Source
-/I J:\UEPluginDemo\FOHEART_UE4_Plugin_Demo\Intermediate\Build\Win64\UE4Editor\Inc\FOHEARTPlugin
-/I J:\UEPluginDemo\FOHEART_UE4_Plugin_Demo\Source\FOHEARTPlugin
+/I C:\Users\foheart\Desktop\FOHEART_UE4_Plugin_Demo\Source
+/I C:\Users\foheart\Desktop\FOHEART_UE4_Plugin_Demo\Intermediate\Build\Win64\UE4Editor\Inc\FOHEARTPlugin
+/I C:\Users\foheart\Desktop\FOHEART_UE4_Plugin_Demo\Source\FOHEARTPlugin
 /I "G:\Unreal Projects\UE_4.18\Engine\Source\Runtime\Core\Public"
 /I "G:\Unreal Projects\UE_4.18\Engine\Source\Runtime\Core\Public\Internationalization"
 /I "G:\Unreal Projects\UE_4.18\Engine\Source\Runtime\Core\Public\Async"
@@ -359,9 +359,9 @@
 /FI"G:\Unreal Projects\UE_4.18\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h"
 /Yu"G:\Unreal Projects\UE_4.18\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h"
 /Fp"G:\Unreal Projects\UE_4.18\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h.pch"
-"J:\UEPluginDemo\FOHEART_UE4_Plugin_Demo\Source\FOHEARTPlugin\FOHEARTPlugin.cpp"
-/FI"J:\UEPluginDemo\FOHEART_UE4_Plugin_Demo\Intermediate\Build\Win64\UE4Editor\Development\FOHEARTPlugin\Definitions.FOHEARTPlugin.h"
-/Fo"J:\UEPluginDemo\FOHEART_UE4_Plugin_Demo\Intermediate\Build\Win64\UE4Editor\Development\FOHEARTPlugin\FOHEARTPlugin.cpp.obj"
+"C:\Users\foheart\Desktop\FOHEART_UE4_Plugin_Demo\Source\FOHEARTPlugin\FOHEARTPlugin.cpp"
+/FI"C:\Users\foheart\Desktop\FOHEART_UE4_Plugin_Demo\Intermediate\Build\Win64\UE4Editor\Development\FOHEARTPlugin\Definitions.FOHEARTPlugin.h"
+/Fo"C:\Users\foheart\Desktop\FOHEART_UE4_Plugin_Demo\Intermediate\Build\Win64\UE4Editor\Development\FOHEARTPlugin\FOHEARTPlugin.cpp.obj"
 /TP
 /GR-
 /W4

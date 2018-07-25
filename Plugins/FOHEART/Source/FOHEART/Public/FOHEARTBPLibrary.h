@@ -78,15 +78,26 @@ enum class EFOHEARTChannelNumberEnum : uint8
 	VE_5	 		UMETA(DisplayName = "5")
 };
 
+UENUM(BlueprintType)
+enum class EFOHEARTBoneAxisEnum : uint8
+{
+	VE_Axis_X			UMETA(DisplayName = "X"),
+	VE_Axis_iX			UMETA(DisplayName = "-X"),
+	VE_Axis_Y			UMETA(DisplayName = "Y"),
+	VE_Axis_iY			UMETA(DisplayName = "-Y"),
+	VE_Axis_Z			UMETA(DisplayName = "Z"),
+	VE_Axis_iZ	 		UMETA(DisplayName = "-Z")
+};
+
 // Bones delivered in the FOHEART_C1 live stream
 UENUM(BlueprintType)
 enum class EFOHEART_C1BonesEnum : uint8
 {
 	VE_Hips				UMETA(DisplayName = "Hips"),
-	VE_Spine			UMETA(DisplayName = "Spine1"),
-	VE_Spine1			UMETA(DisplayName = "Spine2"),
-	VE_Spine2			UMETA(DisplayName = "Spine3"),
-	VE_Spine3			UMETA(DisplayName = "Spine4"),
+	VE_Spine			UMETA(DisplayName = "Spine(useless)"),
+	VE_Spine2			UMETA(DisplayName = "Spine2"),
+	VE_Spine3			UMETA(DisplayName = "Spine3"),
+	VE_Spine4			UMETA(DisplayName = "Spine4"),
 	VE_Neck				UMETA(DisplayName = "Neck"),
 	VE_Head				UMETA(DisplayName = "Head"),
 	VE_RightShoulder	UMETA(DisplayName = "RightShoulder"),
@@ -108,13 +119,52 @@ enum class EFOHEART_C1BonesEnum : uint8
 };
 
 USTRUCT(BlueprintType)
+struct FFOHEART_BoneAxisMatch
+{
+	GENERATED_USTRUCT_BODY()
+
+public:
+	//  Constructor  
+	FFOHEART_BoneAxisMatch() {}
+	FFOHEART_BoneAxisMatch(FString _UE4BoneAxis, EFOHEARTBoneAxisEnum _BoneAxis):UE4BoneAxis(_UE4BoneAxis), FOHEARTBoneAxis(_BoneAxis) {};
+
+	FFOHEART_BoneAxisMatch& operator=(const FFOHEART_BoneAxisMatch& boneAxisMatch)
+	{
+		this->UE4BoneAxis = boneAxisMatch.UE4BoneAxis;
+		this->FOHEARTBoneAxis = boneAxisMatch.FOHEARTBoneAxis;
+		return *this;
+	}
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "FOHEART_BoneAxisMatch")
+		FString UE4BoneAxis = TEXT("X");
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "FOHEART_BoneAxisMatch")
+		EFOHEARTBoneAxisEnum FOHEARTBoneAxis = EFOHEARTBoneAxisEnum::VE_Axis_X;
+};
+
+USTRUCT(BlueprintType)
 struct FFOHEART_C1BoneMapStruct
 {
 	GENERATED_USTRUCT_BODY()
-		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "FOHEART_C1")
+
+public:
+	//  Constructor  
+	FFOHEART_C1BoneMapStruct() {};
+	FFOHEART_C1BoneMapStruct(EFOHEART_C1BonesEnum bvhBone, FName boneName, 
+		FFOHEART_BoneAxisMatch matchAxisX, FFOHEART_BoneAxisMatch matchAxisY, FFOHEART_BoneAxisMatch matchAxisZ)
+		:BVHBone(bvhBone), CustomBoneName(boneName), 
+		MatchAxis_X(matchAxisX), MatchAxis_Y(matchAxisY), MatchAxis_Z(matchAxisZ) {};
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "FOHEART_C1")
 		EFOHEART_C1BonesEnum BVHBone = EFOHEART_C1BonesEnum::VE_Hips;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "FOHEART_C1")
 		FName CustomBoneName = FName(TEXT("None"));
+
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "FOHEART_C1")
+		FFOHEART_BoneAxisMatch MatchAxis_X;
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "FOHEART_C1")
+		FFOHEART_BoneAxisMatch MatchAxis_Y;
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "FOHEART_C1")
+		FFOHEART_BoneAxisMatch MatchAxis_Z;
 };
 
 USTRUCT(BlueprintType)
@@ -131,7 +181,7 @@ UCLASS()
 class UFOHEART_C1BPLibrary : public UBlueprintFunctionLibrary
 {
 	GENERATED_UCLASS_BODY()
-
+public:
 		// Init functions
 		UFUNCTION(BlueprintCallable, Category = "FOHEART_C1", meta = (DisplayName = "Init BVH Replay File", ToolTip = "Init BVH reference skeleton with a BVH file."))
 		static bool FOHEART_C1InitBVHFile(AFOHEARTController *Controller, const FString BVHFileName = FString(TEXT("demo.bvh")));
@@ -164,8 +214,8 @@ class UFOHEART_C1BPLibrary : public UBlueprintFunctionLibrary
 	// Read motion functions
 	UFUNCTION(BlueprintCallable, Category = "FOHEART_C1", meta = (DisplayName = "Read Motion", ToolTip = "Read incoming motion data for all bones."))
 		static bool FOHEART_C1Read(AFOHEARTController *Controller, FString ActorName, USkeletalMeshComponent *Mesh, FVector& Translation, FRotator& Rotation,
-			FVector AdditionalTranslation, FRotator AdditionalRotation, EFOHEART_C1BonesEnum BVHBone = EFOHEART_C1BonesEnum::VE_Hips,
-			FName CustomBoneName = FName(TEXT("None")), bool InverseForward = false);
+			FVector AdditionalTranslation, FRotator AdditionalRotation, EFOHEART_C1BonesEnum BVHBone,
+			FName CustomBoneName, FFOHEART_BoneAxisMatch MatchAxis_X, FFOHEART_BoneAxisMatch MatchAxis_Y, FFOHEART_BoneAxisMatch MatchAxis_Z, bool InverseForward = false);
 	UFUNCTION(BlueprintCallable, Category = "FOHEART_C1", meta = (DisplayName = "Read Motion Array", ToolTip = "Read incoming motion data for all bones."))
 		static bool FOHEART_C1ReadArray(AFOHEARTController *Controller, FString ActorName, USkeletalMeshComponent *Mesh, TArray<FVector> &Translation,
 			TArray<FRotator> &Rotation, TArray<FVector> AdditionalTranslation, TArray<FRotator> AdditionalRotation, TArray<FFOHEART_C1BoneMapStruct> BoneMap, bool InverseForward = false);
@@ -181,4 +231,7 @@ class UFOHEART_C1BPLibrary : public UBlueprintFunctionLibrary
 		static FRotator FOHEART_C1NegateRotation(FRotator Rotation);
 	UFUNCTION(BlueprintPure, Category = "FOHEART_C1", meta = (DisplayName = "Get BVH Bone Index", CompactNodeTitle = "Index", ToolTip = "Return BVH Bone Index from Enum."))
 		static int32 FOHEART_C1GetBVHBoneIndex(EFOHEART_C1BonesEnum BVHBone = EFOHEART_C1BonesEnum::VE_Hips);
+
+
+	static void ChangeAxisMatchMap(FQuat qOri, FQuat& qNew, EFOHEARTBoneAxisEnum matchX, EFOHEARTBoneAxisEnum matchY, EFOHEARTBoneAxisEnum matchZ);
 };

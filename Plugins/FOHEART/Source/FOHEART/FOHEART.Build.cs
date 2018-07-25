@@ -27,7 +27,18 @@ public class FOHEART : ModuleRules
 		PublicDependencyModuleNames.AddRange(
 			new string[]
 			{
-				"Core","Sockets", "Networking"
+				"Core",
+                "Sockets",
+                "Networking",
+                "Engine",
+                "InputCore",
+                "AIModule",
+                "GameplayTasks",
+                "Landscape",
+                "Foliage",
+                "AnimGraphRuntime",
+                "AnimGraph",
+                "BlueprintGraph"
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);
